@@ -82,28 +82,3 @@
 </div>
 
 {% endmacro index_page %}
-
-
-{% macro list_articles(pages) %}
-    {% for page in pages %}
-        {{ self::article(page=page) }}
-    {% endfor %}
-{% endmacro list_articles %}
-
-{% macro article(page) %}
-<article>
-    <div>
-    {% if page.date %}
-        <date>{{ page.date }}</date>
-    {% endif %}
-        <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
-    </div>
-    {% if page.description %}
-        <p>{{ page.description | safe }}</p>
-    {% endif %}
-    <ul id="tags_article">
-    {% if page.taxonomies.tags %}{% for tag in page.taxonomies.tags %}{% if loop.last %}<li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >{{ tag }}</a>;</li>
-    {% else %}<li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >{{ tag }}</a>,</li>{% endif %}{% endfor %}{% endif %}
-    </ul>
-</article>
-{% endmacro article %}
