@@ -1,0 +1,44 @@
+@mixin black-lnk{
+    color: $black;
+    text-decoration: none;
+    transition: .35s ease-in-out;
+    &:hover{
+      color: $gray-600;
+      text-decoration: none;
+    }
+}
+
+@mixin flexbox(
+  $display: flex,
+  $direction: column,
+  $place-content: null,
+  $placeItems: null,
+  $wrap: nowrap,
+  $shrink: 0,
+  $grow: 0,
+  $align-content: null,
+  $justify-content: null,
+  $align-items: null,
+  $justify-items: null) {
+
+  display: $display;
+  flex-direction: $direction;
+
+  @if $place-content == null {
+    @if $align-content   { align-content: $align-content; }
+    @if $justify-content { justify-content: $justify-content; }
+  } @else {
+    place-content: $place-content;
+  }
+
+  @if $placeItems == null {
+    @if $align-items   { align-items: $align-items; }
+    @if $justify-items { justify-items: $justify-items; }
+  } @else {
+    place-items: $placeItems;
+  }
+
+  flex-wrap: $wrap;
+  flex-shrink: $shrink;
+  flex-grow: $grow;
+}

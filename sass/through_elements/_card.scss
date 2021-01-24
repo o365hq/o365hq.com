@@ -1,0 +1,113 @@
+.card {
+  word-wrap:normal;
+  position: relative;
+  text-decoration: none;
+  color: $black;
+  transition: .35s ease-in-out;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+  }
+
+  &__arrowed .card-body {
+    padding-right: 50px;
+  }
+
+  &-arrow {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: $card-spacer-y;
+    right: $card-spacer-x;
+  }
+  &__logo{
+    width: 34px;
+    height: 34px;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  &__divider{
+    margin: 0 .5rem;
+    display: inline-block;
+  }
+
+  &.card__blue {
+    background: $blue;
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &.card__black {
+    background: $black;
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &.card__gray {
+    background: #f7f7fe;
+  }
+  &.card__hover-inverse:hover {
+    background: $black;
+    color: white;
+    .text-muted{
+      color: white !important;
+    }
+  }
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    &.card__gray {
+      backdrop-filter: blur(10px);
+      background-color: rgba(#f7f7fe, 0.8);
+    }
+  }
+
+}
+
+.services-cloud-cards{
+  .tag-lnk{
+    display: inline-block;
+    margin-top: 1.813rem;
+  }
+  .text-lead{
+    font-size: 1.375rem;
+  }
+
+  .card-title,
+  .card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-title{
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+  .card-text{
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+  }
+
+}
+.card-columns.hero-cards {
+  @include media-breakpoint-up(md) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(sm) {
+    column-count: 1;
+  }
+}
+.map-card{
+  @include media-breakpoint-up(md){
+    position: absolute;
+    bottom: -5rem;
+    left: 15px;
+    width: 40%;
+  }
+}

@@ -1,0 +1,131 @@
+.paralax{
+  position: absolute;
+}
+.img-1{
+  left: 0;
+  width: 30vw;
+  top: 0;
+  z-index: 0;
+}
+.img-2{
+  left: 0;
+  width: 30vw;
+  top: 20vw;
+  z-index: 1;
+}
+.img-3{
+  right: 30%;
+  top: 50%;
+  width: 20vw;
+  z-index: 2;
+}
+.img-4{
+  right: 26%;
+  top: 30%;
+  width: 10vw;
+  z-index: 0;
+}
+
+.img-5{
+  left: 0;
+  top: 30rem;
+  width: 20vw;
+  z-index: 0;
+}
+.plus{
+  width: 50px;
+  height: 50px;
+}
+.img-6{
+  left: 10%;
+  top: 38rem;
+  z-index: 1;
+}
+.img-7{
+  right: 1rem;
+  top: 10rem;
+  z-index: 1;
+}
+.img-8{
+  right: 1rem;
+  top: 80rem;
+  z-index: 1;
+}
+.img-9{
+  right: -2rem;
+  top: 10rem;
+  z-index: 1;
+}
+.img-10{
+  right: 0;
+  top: 6rem;
+  z-index: 1;
+}
+.img-11{
+  right: 0;
+  top: -30rem;
+  z-index: 0;
+  width: 32%;
+}
+.img-12{
+  right: 2rem;
+  top: 80%;
+  z-index: 1;
+}
+.img-13{
+  left: 0;
+  top: 50%;
+  z-index: 0;
+  width: 30%;
+  max-width: 800px;
+}
+.img-14{
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 40%;
+  max-width: 800px;
+}
+.img-15{
+    left: 16%;
+    top: 50%;
+    z-index: 0;
+    width: 200px;
+}
+.img-16{
+  left: 30%;
+  top: 50%;
+  z-index: 0;
+}
+
+.img-17{
+  left: 0;
+  top: 30%;
+  z-index: 0;
+  width: 50%;
+  max-width: 900px;
+}
+.img-18{
+  right: 0;
+  top: 80%;
+  z-index: 0;
+  width: 50%;
+  max-width: 900px;
+}
+.img-19{
+  left: 0;
+  top: -250px;
+  z-index: 0;
+  width: 25%;
+  max-width: 320px;
+}
+
+.cube-blue{
+  position: absolute;
+  width: 170px;
+  height: 194px;
+  right: 0;
+  top: -70px;
+  z-index: 0;
+  background: $blue;
+}

@@ -1,0 +1,195 @@
+{% extends "index.html" %}
+
+{% block title %} {{ config.title }} | {{ page.title }} {% endblock title %}
+
+
+{% block content %}
+
+<section class="container-fluid max-width m-auto position-relative z-1">
+        
+  <div class="col-lg-9 m-auto">
+
+    
+      <div class="my-lg-4 m-sm-3">
+        {% for parent in page.ancestors %}
+        {% set s = get_section(path=parent, include_pages=false) %}
+        <a href="{{s.permalink}}">{{s.title}}</a>/
+        {% endfor %}
+        {{ page.title }}
+      </div>
+
+
+      <div class="mb-5"></div>
+      <h2>{{ page.title }}</h2>
+
+      <p>
+        {% if page.taxonomies.products %}
+          {% for product in page.taxonomies.products %}
+          {% if loop.last %} 
+            <a href="{{ get_taxonomy_url(kind="products", name=product) | safe }}" >{{ product }}</a>
+            {% else %} 
+            <a href="{{ get_taxonomy_url(kind="products", name=product) | safe }}" >{{ product }}</a>,
+          {% endif %}
+          {% endfor %} 
+        {% endif %}
+    
+        {% if page.taxonomies.types %}
+          {% for type in page.taxonomies.types %}
+          {% if loop.last %} 
+            <a href="{{ get_taxonomy_url(kind="types", name=type) | safe }}" >{{ type }}</a>
+            {% else %} 
+            <a href="{{ get_taxonomy_url(kind="types", name=type) | safe }}" >{{ type }}</a>,
+            {% endif %}
+            {% endfor %} 
+          {% endif %}
+    
+        {% if page.taxonomies.tags %}
+          {% for tag in page.taxonomies.tags %}
+          {% if loop.last %} 
+            <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >#{{ tag }}</a>
+            {% else %} 
+            <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >#{{ tag }}</a>,
+            {% endif %}
+            {% endfor %} 
+          {% endif %}
+      </p>
+
+      <div class="lead my-lg-5 my-sm-3">
+          <p>{{ page.description | safe }}</p>
+      </div>
+      
+      <div class="my-lg-5 my-sm-3">
+          <div class="row">
+              <div class="col-lg-8 col-sm-12 m-auto">
+                  {{ page.content | safe }}
+              </div>
+          </div>
+      </div>
+ 
+      
+      <div class="my-lg-5 my-sm-3">
+          <div class="row">
+              <div class="col-lg-8 col-sm-12 m-auto">
+                  <p class="text-muted">{{ page.date }}</p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="my-lg-5 my-sm-3">
+          <div class="row">
+              <div class="col-lg-8 col-sm-12 m-auto">
+                  
+                  <div class="jumbotron position-relative">
+                      <div class="container">
+                          <h4 class="mb-4">Request a call back</h4>
+                          <div>Do you have questions? Want to discuss your project? Please schedule a call back.</div>
+                          <a href="#">
+                              <svg class="jumbotron-arrow">
+                                  <use xlink:href="#arrow-tr"></use>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+
+    {% set path = current_path | truncate(length=4, end="") %}
+    {% if path == '/blo' %}
+      <div class="my-lg-5 my-sm-3">
+          <div class="row">
+              <div class="col-lg-8 col-sm-12 m-auto">
+                  
+                  <h2 class="mb-5">Similar posts</h2>
+                  
+                  <div class="d-lg-flex justify-content-lg-between">
+                      <div class="row">
+
+                        {% if page.earlier %}
+                          <div class="col-lg-6 col-sm-12">
+                              <div class="col-lg-12">
+                                  
+                                  <div class="border-top border-dark py-5">
+                                      <p>
+                                          <a href="{{ page.earlier.permalink | safe }}" class="text-dark">
+
+                                              <b>{{ page.earlier.title }}</b>
+                                          </a>
+                                      </p>
+                                      <p>
+                                        {% if page.earlier.taxonomies.tags %}
+                                        {% for tag in page.earlier.taxonomies.tags %}
+                                        {% if loop.last %} 
+                                          <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >#{{ tag }}</a>
+                                          {% else %} 
+                                          <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >#{{ tag }}</a>,
+                                          {% endif %}
+                                          {% endfor %} 
+                                        {% endif %}
+                                      </p>
+                                  </div>
+                              
+                              </div>
+                          </div>
+                        {% endif %}
+
+                        {% if page.later %}
+                          <div class="col-lg-6 col-sm-12">
+                              <div class="col-lg-12">
+                                  
+                                  <div class="border-top border-dark py-5">
+                                      <p>
+                                          <a href="{{ page.later.permalink | safe }}" class="text-dark">
+                                              <b>{{ page.later.title }}</b>
+                                          </a>
+                                      </p>
+                                      <p>
+                                        {% if page.later.taxonomies.tags %}
+                                        {% for tag in page.later.taxonomies.tags %}
+                                        {% if loop.last %} 
+                                          <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >#{{ tag }}</a>
+                                          {% else %} 
+                                          <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >#{{ tag }}</a>,
+                                          {% endif %}
+                                          {% endfor %} 
+                                        {% endif %}
+                                      </p>
+                                  </div>
+                              
+                              </div>
+                          </div>
+                        {% endif %}
+                      </div>
+                  
+                  
+                  </div>
+              </div>
+          </div>
+      </div>
+    {% endif %}
+
+  </div>
+
+  <div class="back-to-top__wrapper" id="back-to-top-wrapper">
+      <div class="max-width m-auto">
+          <div class="back-to-top__item" id="back-to-top">
+              <svg>
+                  <use xlink:href="#arrow-l"></use>
+              </svg>
+              <b>
+                  To top
+              </b>
+          </div>
+          
+      </div>
+      
+  </div>
+</section>
+
+<img src="../../img/cloud-l-side-big.png" direction="up" class="paralax img-17" alt="">
+<img src="../../img/cloud-big-r-side.png" direction="down" class="paralax img-18" alt="">
+
+</div>
+
+{% endblock content %}

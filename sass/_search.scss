@@ -1,0 +1,53 @@
+.search-container {
+    display: none;
+    text-align: center;
+  
+    &--is-visible {
+      display: block;
+      animation: fade-in 0.4s ease-in-out;
+    }
+  
+    #search-input {
+      width:50vw;
+      margin:0 auto;
+      border: 1px solid rgb(96, 94, 92);
+      border-radius: 2px;
+      cursor: text;
+      padding: 5px 8px;
+      text-align: left;
+  
+      font-family: "Poppins";
+    }
+  
+    #search-input:focus {
+      border:2px solid rgb(0, 120, 212);
+      border-radius: 1px;
+    }
+  
+    .search-results {
+      &__header {
+        font-weight: bold;
+        width:50vw;
+        margin:1vw auto;
+      }
+  
+      &__items {
+        margin:1vw auto;
+        width:50vw;
+        list-style: circle;
+        text-align: left;
+      }
+  
+      &__item {
+        margin-bottom: 1rem;
+      }
+  
+      &__teaser {
+       
+      }
+    }
+  }
+  
+    #search-ico {
+   
+   }

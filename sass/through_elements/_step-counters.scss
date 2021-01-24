@@ -1,0 +1,23 @@
+.step-counters{
+  list-style: none;
+  counter-reset: rounded-counter;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  li{
+    counter-increment: rounded-counter;
+    width: 50%;
+    margin-bottom: 2rem;
+    &::before{
+      content: '0' counter(rounded-counter);
+      display: block;
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      border: 1px solid $black;
+      @include flexbox($justify-content: center, $align-items: center);
+      margin-bottom: 2rem;
+      font-size: 1.875rem;
+    }
+  }
+}

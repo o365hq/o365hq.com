@@ -1,0 +1,157 @@
+{% extends "index.html" %}
+
+{% block title %} {{ config.title }} | {{ page.title }} {% endblock title %}
+
+{% block content %}
+<div class="container-fluid max-width m-auto">
+    <div class="row my-5">
+        <aside class="col-lg-3 col-sm-12 product-aside">
+            
+            <div class="scroll-listener">
+                <h2>{{ page.title }}</h2>
+            </div>
+
+        </aside>
+        
+        <article class="col-lg-6 col-sm-12 reserve-header">
+            <ul class="nav nav-tabs nav-tabs__tiny" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active"
+                       data-toggle="tab"
+                       href="#description"
+                       role="tab"
+                       aria-controls="description"
+                       aria-selected="true">Description</a>
+                </li>
+            </ul>
+            
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="description" role="tabpanel">
+                    <div class="my-5">
+                        <div class="lead my-lg-5 my-sm-3">{{ page.description }}</div>       
+                        {{ page.content | safe }}
+
+                    <div class="row mt-5">
+                        <div class="col pt-5 border-top">
+                            <h4 class="mb-4 ">Share</h4>
+                            <div class="my5">
+                            <p>
+                                <a href="https://teams.microsoft.com/share?href={{ page.permalink | safe }}&referrer=o365hq.com">MicrosoftTeams</a>
+                                    <span class="text-muted">/</span>
+                                <a href="/">Edit it on GitHub</a>
+                                    <span class="text-muted">/</span>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.permalink | safe }}">FaceBook</a>
+                                    <span class="text-muted">/</span>
+                                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ page.permalink | safe }}&amp;title={{ page.title }}&amp;source=o365hq.com&amp;summary={{ page.description | safe }}"> LinkedIn</a>
+                            </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                            
+                        
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col pt-5 border-top">
+                    <h4 class="mb-4 ">Related services</h4>
+                    <div class="row">
+                        {% if page.earlier %}
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card card__gray card__hover-inverse">
+                                <div class="card-body">
+                                    <h5 class="card-title border-bottom pb-3"> <a href="{{ page.earlier.permalink | safe }}" >{{ page.earlier.title }}</a></h5>
+                                    <p class="card-text">{{ page.earlier.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if page.later %}
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card card__gray card__hover-inverse">
+                                <div class="card-body">
+                                    <h5 class="card-title border-bottom pb-3"> <a href="{{ page.later.permalink | safe }}" >{{ page.later.title }}</a></h5>
+                                    <p class="card-text">{{ page.later.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <section class="col-lg-3 col-sm-12 total-side">
+           
+            
+            <div class="card card__gray mb-3">
+                <div class="card-body">
+                    <p>
+                        <span class="text-muted">SKU</span>
+                        <span class="span text-primary h4">{% if page.extra.sku %}{{ page.extra.sku }}{% endif %}</span>
+                    </p>
+                    <div class="row d-flex justify-content-between">
+                        
+                        {% if page.taxonomies.types %}
+                        {% for type in page.taxonomies.types %}
+                        <div class="col-6"> <span class="text-muted"> <a href="{{ get_taxonomy_url(kind="types", name=type) | safe }}" >{{ type }}</a></span></div>
+                        {% endfor %}
+                    {% endif %}
+               
+                    {% if page.taxonomies.products %}
+                      {% for product in page.taxonomies.products %}
+                      <div class="col-6"> <span class="text-muted"><a href="{{ get_taxonomy_url(kind="products", name=product) | safe }}" >{{ product }}</a></span></div>
+                      {% endfor %}
+                    {% endif %}
+
+                    {% if page.extra.duration %}<div class="col-6">{{ page.extra.duration }}</div>{% endif %}
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card card__blue mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-5">
+                        <div>Service Manager</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        {% if page.extra.manager %}
+                        {% if page.extra.manager == 'Roman Sotnik' %}
+                            <div>
+                                Roman Sotnik
+                                <br/>Mail here
+                                <br/>Phone here
+                            </div>
+                        
+                        {% endif %}
+                        
+                        {% if page.extra.manager == 'Mike Mackey' %}
+                          <div>
+                                Mike Mackey
+                                <br/>Mail here
+                                <br/>Phone here
+                          </div>
+                        
+                        {% endif %}
+                    
+                        {% endif %}
+                        <div><small>approximate price:</small><br/> {% if page.extra.price %}<span class="h3">{{ page.extra.price }}</span> {% endif %}</div>
+                    </div>
+                </div>
+            </div>
+
+      
+        </section>
+    
+    </div>
+</div>
+</div>
+
+{% endblock content %}

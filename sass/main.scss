@@ -1,0 +1,177 @@
+@import "variables";
+
+@import "bootstrap/_functions";
+@import "bootstrap/_variables";
+@import "bootstrap/_mixins";
+@import "bootstrap/_root";
+@import "bootstrap/_reboot";
+@import "bootstrap/_type";
+@import "bootstrap/_images";
+@import "bootstrap/_code";
+@import "bootstrap/_grid";
+@import "bootstrap/_tables";
+@import "bootstrap/_forms";
+@import "bootstrap/_buttons";
+@import "bootstrap/_transitions";
+@import "bootstrap/_dropdown";
+@import "bootstrap/_button-group";
+@import "bootstrap/_input-group";
+@import "bootstrap/_custom-forms";
+@import "bootstrap/_nav";
+@import "bootstrap/_navbar";
+@import "bootstrap/_card";
+@import "bootstrap/_breadcrumb";
+@import "bootstrap/_pagination";
+@import "bootstrap/_badge";
+@import "bootstrap/_jumbotron";
+@import "bootstrap/_alert";
+@import "bootstrap/_progress";
+@import "bootstrap/_media";
+@import "bootstrap/_list-group";
+@import "bootstrap/_close";
+@import "bootstrap/_toasts";
+@import "bootstrap/_modal";
+@import "bootstrap/_tooltip";
+@import "bootstrap/_popover";
+@import "bootstrap/_carousel";
+@import "bootstrap/_spinners";
+@import "bootstrap/_utilities";
+@import "bootstrap/_print";
+
+@import "_mixins";
+@import "_fonts";
+@import "_helpers";
+
+//utilities
+@import "utilities/_position";
+@import "utilities/_sizing";
+
+//plugins
+@import "jquery.mCustomScrollbar";
+@import "plugins/mCustomScrollbar-override";
+@import "plugins/swiper-override";
+
+
+//through_elements
+@import "through_elements/site-header";
+@import "through_elements/site-footer";
+@import "through_elements/card";
+@import "through_elements/step-counters";
+@import "through_elements/nav-pills";
+@import "through_elements/nav-tabs";
+@import "through_elements/forms";
+@import "through_elements/pagination";
+@import "through_elements/goback";
+@import "through_elements/back-to-top";
+@import "through_elements/jumbotron";
+@import "through_elements/goals";
+
+
+//index page
+@import "index_page/_hero-screen";
+@import "index_page/_content-cols";
+@import "index_page/_paralax-images";
+
+
+@import "product/aside";
+@import "product/description";
+
+@import "search";
+
+html, body{
+    height: 100%;
+  }
+
+  img {
+    max-width:100%;
+  }
+  .content-wrapper {
+    flex: 1 0 auto;
+    padding-top: 100px;
+  }
+  .site-footer {
+    flex-shrink: unset;
+  }
+  .max-width {
+    max-width: $max-width;
+  }
+  .svg-sprite{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+  }
+  
+  .map-holder-1{
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      left: -20%;
+      width: 120%
+    }
+  }
+
+  .app form {
+     
+    button {
+      cursor: pointer;
+    }
+  
+    .form__error {
+      color: red;
+      text-align: left;
+      font-size: 12px;
+      display: block;
+      margin-top: 3px;
+      display: none;
+    }
+    
+    input:focus {
+      border-bottom:2px solid rgb(0, 120, 212);
+    }
+  
+    input:valid:not(:placeholder-shown) {
+      border-color: green;
+    }
+    
+    input:invalid:not(:placeholder-shown) {
+      border-color: red;
+    }
+  
+    input:invalid:not(:placeholder-shown) + .form__error {
+      display: block;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0.8;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+h2,
+h3,
+h4 {
+  .anchor {
+    visibility: hidden;
+    text-decoration: none;
+    border-bottom-color: transparent;
+    cursor: pointer;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  &:hover {
+    .anchor {
+      visibility: visible;
+      animation: fade-in 0.3s ease-in-out;
+    }
+  }
+}

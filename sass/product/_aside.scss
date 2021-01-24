@@ -1,0 +1,29 @@
+.product-aside {
+  position: sticky;
+  top: 60px;
+  z-index: 1000;
+  .product-aside__icon {
+    width: 18px;
+    height: 22px;
+    vertical-align: middle;
+  }
+}
+
+.scroll-listener{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px
+}
+
+.reserve-header{
+  padding-top: 300px;
+}
+
+.go-to-cart{
+  color: $white;
+  svg {
+    width: 40px;
+    height: 32px;
+  }
+}

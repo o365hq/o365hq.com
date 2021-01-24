@@ -1,0 +1,46 @@
+.form-control{
+  border-bottom: 1px solid;
+  &:not(:placeholder-shown) {
+    border-color: $black;
+  }
+  &:placeholder-shown {
+    border-color: $gray-200;
+  }
+}
+textarea.autoSizeTextarea{
+  box-sizing: border-box;
+  max-height: 160px;
+  min-height: 38px;
+  overflow: hidden;
+  resize: none;
+
+}
+
+$mynewcolor: $black;
+
+.btn-primary {
+  @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+}
+
+.btn-light {
+  background: rgba(47, 43, 216, 0.04);
+  color: $blue;
+  font-weight: 600;
+  margin: .5rem;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid{
+  border-color: $red;
+  background: none;
+  padding: 0;
+  &:active,
+  &:focus{
+    outline: 0;
+    box-shadow: none;
+  }
+}

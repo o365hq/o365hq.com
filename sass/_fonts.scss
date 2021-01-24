@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf');
+  src: local('Poppins'),
+  url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Italic.ttf');
+  src: local('Poppins'),
+  url('../fonts/Poppins-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Bold.ttf');
+  src: local('Poppins'),
+  url('../fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-BoldItalic.ttf');
+  src: local('Poppins'),
+  url('../fonts/Poppins-BoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+html, body{
+  @include font-size (1rem);
+}
+
+h1{
+  font-size: 8vw;
+  @include font-size (9.375rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+h2{
+  font-weight: 600;
+  @include font-size(3.75rem);
+  line-height: 130%;
+  letter-spacing: -1.5px;
+}
+h3,
+h4{
+  font-style: normal;
+  font-weight: 600;
+  @include font-size (1.875rem);
+  line-height: 130%;
+  letter-spacing: -0.5px;
+}
+h5,
+h6{
+  font-style: normal;
+  font-weight: 400;
+  @include font-size (1.875rem);
+  line-height: 130%;
+  letter-spacing: -0.5px;
+}
+
+.quote{
+  width: 23px;
+  height: 23px;
+}

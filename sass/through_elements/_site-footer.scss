@@ -1,0 +1,40 @@
+.site-footer{
+  border-top: 1px solid $gray-200;
+  background: white;
+  position: relative;
+  z-index: 100000;
+  a{
+    @include black-lnk;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    li{
+      margin: 1rem 0;
+    }
+  }
+  &__side-text{
+    max-width: 360px;
+  }
+  &__links:not(:last-child){
+    margin-right: 4rem;
+  }
+  &__social{
+    @include flexbox($direction: row, $align-items: center);
+    margin-bottom: 1rem;
+    a{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background: $gray-200;
+      margin-right: 1rem;
+      @include flexbox($justify-content: center, $align-items: center);
+      svg{
+        width: 50%;
+        height: 60%;
+      }
+    }
+  }
+
+}

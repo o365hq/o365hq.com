@@ -1,0 +1,110 @@
+{% extends "index.html" %}
+
+{% block title %} {{ config.title }} | {{ section.title }} {% endblock title %}
+
+
+{% block content %}
+
+
+<section class="container-fluid max-width m-auto position-relative z-1">
+  <div class="row">
+      
+      <div class="col-lg-3 col-md-4 col-sm-12  my-lg-5">
+          <p class="text-lead">
+              <b>Tags</b>
+          </p>
+          
+      {% set tags = get_taxonomy(kind="tags") %}
+      <ul class="nav nav-pills flex-lg-column">
+      {% for term in tags.items %}  
+              <li class="nav-item">
+                  <a class="nav-link" href="{{term.permalink | safe }}">{{term.name | safe}}</a>
+              </li>
+      {% endfor %}
+          </ul>
+      </div>
+      
+      <div class="col-lg-9 col-md-8 col-sm-12 services-cloud-cards">
+          <div class="row">
+              <div class="col-sm-12 col-lg-7 align-self-center">
+                  <h2>Latest news, updates and useful articles from around the world</h2>
+              </div>
+              <div class="col-lg-5">
+                  <img src="../img/blog-header.jpg"
+                       class="d-block w-100"
+                       srcset="../img/blog-header.jpg 1x, ../img/blog-header@2x.jpg 2x"
+                       alt="">
+              </div>
+          </div>
+
+          <div class="col my-5">
+            
+        
+        {% for page in paginator.pages %}     
+              <div class="row border-dark border-top py-5">
+                  <div class="col-lg-2 col-sm-12">
+                      <p class="text-muted">
+                        {{ page.date }}
+                      </p>
+                  </div>
+                  
+                  <div class="col-lg-6 pr-lg-5">
+                      <a href="{{ page.permalink | safe }}" class="h3 text-dark d-block font-weight-bold mb-4">{{ page.title }}</a>
+                      <p>{% if page.taxonomies.tags %}{% for tag in page.taxonomies.tags %}
+                          <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" class="mr-3">#{{ tag }}</a>
+                          {% endfor %}{% endif %}
+                      </p>
+                  </div>
+                  
+                  <div class="col-lg-3 col-sm-12">
+                      <p>{{ page.description | safe | truncate(length=200) }}</p>
+                  </div>
+                  
+
+                  <div class="col-lg-1 col-sm-12">
+                      <svg class="feature-arrow float-right">
+                          <use xlink:href="#arrow-r"></use>
+                      </svg>
+                  </div>
+              </div>
+
+              {% endfor %}
+
+              <ul class="pagination">
+                
+                  <li class="page-item">
+                      <a class="page-link" href="{{ paginator.previous }}" tabindex="-1">
+                        {% if paginator.previous %}<svg class="arrow">
+                              <use xlink:href="#arrow-l"></use>
+                          </svg>
+                          Previous 10 posts{% endif %}
+                      </a>
+                  </li>
+               
+                  {{ macro::paginator_block() }}
+
+                  <li class="page-item">
+                      <a class="page-link" href="{{ paginator.next }}">
+                        {% if paginator.next %}Next 10 posts
+                          <svg class="arrow">
+                              <use xlink:href="#arrow-r"></use>
+                          </svg>{% endif %}
+                      </a>
+                  </li>
+              </ul>
+              
+          </div>
+      </div>
+      
+  </div>
+
+ 
+
+</section>
+
+<img src="../img/cloud-l-side-big.png" direction="up" class="paralax img-17" alt="">
+<img src="../img/cloud-big-r-side.png" direction="down" class="paralax img-18" alt="">
+
+</div>
+          
+{% endblock content %}

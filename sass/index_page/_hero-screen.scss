@@ -1,0 +1,19 @@
+.hero-screen {
+  @include flexbox();
+  min-height: calc(100vh - 100px);
+  padding: 100px 0;
+  .certified{
+    width: 165px;
+    right: 0;
+    top: 40%;
+    font-weight: 600;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 15px;
+    }
+    svg{
+      width: 26px;
+      height: 26px;
+    }
+  }
+}

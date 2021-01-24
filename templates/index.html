@@ -1,0 +1,561 @@
+{% import "macro.html" as macro %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+    
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    {% set path = current_path | truncate(length=4, end="") %}
+    {% if path == '/por' %}
+    <div class="center-scroll-holder position-relative" >
+    {% endif %}
+
+<div class="content-wrapper">
+
+    {% block nav %}
+    
+    <header class="">
+        
+        <nav class="site-header fixed-top">
+            <div class="max-width mx-auto navbar navbar-expand-lg navbar-light bg-white scrolling-navbar py-lg-0">
+                <a class="navbar-brand site-header__logo" href="/">
+                    <svg>
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                    <b>IT Partner</b>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-center  mx-auto">
+
+                        {% set path = current_path | truncate(length=4, end="") %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if path == '/ser' %}active{% endif %}" href="/services/">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if path == '/blo' %}active{% endif %}" href="/blog/">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if path == '/por' %}active{% endif %}" href="/portfolio/">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if path == '/faq' %}active{% endif %}" href="/faq/">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if path == '/abo' %}active{% endif %}" href="/about/">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if path == '/con' %}active{% endif %}" href="/contacts/">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class=" d-flex
+                                mt-3
+                                mr-5
+                                mr-sm-0
+                                flex-sm-row
+                                flex-md-row
+                                align-items-center
+                                justify-lg-content-end
+                                justify-content-center
+                                ">
+                        <!--
+                        <div class="dropdown d-inline-block">
+                            <div class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                 aria-haspopup="true" aria-expanded="false">
+                                US
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">RU</a>
+                                <a class="dropdown-item" href="#">ES</a>
+                            </div>
+                        </div>
+                        -->
+                        <div>
+                            <a href="#" id="search-ico" class="site-header__icon-lnk d-inline-block">
+                                <svg>
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <!--
+                        <div class="ml-3">
+                            <a href="#" class="site-header__icon-lnk d-inline-block">
+                                <svg>
+                                    <use xlink:href="#cart"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="ml-3">
+                            <a href="" class="site-header__icon-lnk active d-inline-block">
+                                <svg>
+                                    <use xlink:href="#user"></use>
+                                </svg>
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+    
+  
+    </header>
+    {% endblock nav %}
+
+    
+    <div class="search-container">
+        <input id="search-input" type="search" placeholder="search..">
+          <div class="search-results">
+            <div class="search-results__header"></div>
+              <ul class="search-results__items"></ul>
+            </div>
+          </div>
+
+
+<div id="search-wrap">
+
+    {% block content %}
+    <section class="hero-screen">
+        <div class="container-fluid m-auto max-width">
+            <div class="row position-relative">
+                <div class="col-lg-10 col-sm-12">
+                    <h1>
+                        Future in the <br>
+                        <span class="position-relative z-2">Cloud Solutions</span>
+                    </h1>
+                </div>
+                
+                <div class="certified border-bottom position-lg-absolute z-1">
+                    <svg>
+                        <use xlink:href="#windows"></use>
+                    </svg>
+                    <div class="py-4">We are certified gold Microsoft’s partner since 2006</div>
+                </div>
+                
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-6 col-sm-12 d-flex align-content-lg-center">
+                    <div class="w-lg-50 m-auto">Our mission is to help Microsoft empower every person and organization on the
+                        planet to achieve more
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 py-5">
+                    <div class="row position-relative z-3">
+                        <div class="col-lg-6 mb-3 col-sm-12">
+                            <a href="/migrate-to-the-cloud" class="card card__blue">
+                                <div class="card-body">
+                                    <h5 class="card-title">Migrate to the Cloud</h5>
+                                    <p class="card-text">Discover</p>
+                                </div>
+                                <svg class="card-arrow">
+                                    <use xlink:href="#card-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <a href="/already-in-the-cloud" class="card card__gray">
+                                <div class="card-body">
+                                    <h5 class="card-title">Already in the Cloud</h5>
+                                    <p class="card-text">Discover</p>
+                                </div>
+                                <svg class="card-arrow">
+                                    <use xlink:href="#card-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <img src="./img/cloud-l-side.png" direction="down" class="paralax img-1" alt="">
+        <img src="./img/cloud-l-side-2.png" direction="up" class="paralax img-2" alt="">
+        <img src="./img/cloud-small-r-side.png" direction="up" class="paralax img-3" alt="">
+        <img src="./img/cloud-small-r-side-2.png"  direction="down" class="paralax img-4" alt="">
+        
+        <svg direction="up" class="paralax img-6 plus d-sm-none d-md-block d-none d-sm-block" alt="">
+            <use xlink:href="#plus"></use>
+        </svg>
+        <svg direction="up" class="paralax img-7 plus d-sm-none d-md-block d-none d-sm-block" alt="">
+            <use xlink:href="#plus"></use>
+        </svg>
+    
+    </section>
+    <section class="container-fluid m-auto max-width content-cols position-relative">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 position-relative">
+                <h2 class="z-1 position-relative">Featured updates from around the world</h2>
+                
+                <img src="./img/index-1.jpg"
+                     srcset="./img/index-1.jpg 1x, ./img/index-1@2x.jpg 2x"
+                     class="paralax img-5 d-sm-none d-md-block d-none d-sm-block"
+                     direction="down"
+                     alt="">
+                <svg direction="up" class="paralax img-8 plus d-sm-none d-md-block d-none d-sm-block" alt="">
+                    <use xlink:href="#plus"></use>
+                </svg>
+                
+            </div>
+            <div class="col-lg-8 col-sm-12 offset-lg-1 featured-list">
+
+                {{ macro::index_page(path="blog/Accessibility in Microsoft 365.md") }}
+
+                {{ macro::index_page(path="blog/How to schedule a Teams conference call on behalf of another user.md") }}
+
+
+            </div>
+        </div>
+       
+    </section>
+    <div class="position-relative">
+        <section class="container-fluid m-auto max-width content-cols position-relative">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 position-relative">
+                    <div class="card card__black position-relative z-3">
+                        <div class="card-body">
+                            <p><small>James O’Connor, managing Director Microsoft International Operations, said:</small>
+                            </p>
+                            <svg class="quote my-4">
+                                <use xlink:href="#quote"></use>
+                            </svg>
+                            <p>
+                                It gives me a great pleasure to announce that IT Partner LLC has been chosen as this year’s
+                                recipient of the “Microsoft’s Area Operations Excellence Partner of the Year Award”.
+                            </p>
+                            <p>
+                                This award is in recognition of their exceptional technical expertise with Microsoft Office
+                                365
+                                cloud services and the Microsoft Azure platform, as well as their customer support efforts
+                                to
+                                drive up adoption of these innovative technologies.
+                            </p>
+                            <h5>
+                                Congratulations! IT Partner LLC is a reliable and professional partner capable of solving
+                                your
+                                IT needs.​
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 offset-lg-2 position-relative px-lg-5">
+                    <h2 class="z-1 position-relative my-5">IT Partner LLC is a reliable and professional partner capable of
+                        solving your needs</h2>
+                    <ol class="step-counters row m-auto">
+                        <li class="step-counters__item col-6">
+                            Strong technical skills to solve complex tasks in a best way.​
+                        </li>
+                        <li class="step-counters__item col-6">
+                            10-years’ experience in Microsoft Cloud Solutions​.
+                        </li>
+                        <li class="step-counters__item col-6">
+                            Our engineers certified by Microsoft, we have best practices and all knowledge base.
+                        </li>
+                        <li class="step-counters__item col-6">
+                            Flexibility and ease of decision making. We aren’t a big corp, we move fast.​
+                        </li>
+                    </ol>
+                    
+                    <div class="m-auto lead row  my-lg-5">
+                        <div class="col">
+                            <p>As a trusted adviser, we are working with hundreds our clients like you, we understand their
+                                problems, issues and challenges.</p>
+                            <p>Our commitment is to help transforming businesses into the edge of IT and embrace all those new
+                                and great technologies.</p>
+                            <p>And once implemented, these cloud services will allow to do more with less while staying secure,
+                                mobile and compliant. ​</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <img src="./img/cloud-small-r-side.png" direction="up" class="paralax img-10" alt="">
+        <img src="./img/cloud-big-r-side.png" direction="down" class="paralax img-11" alt="">
+        <svg direction="up" class="paralax img-12 plus d-sm-none d-md-block d-none d-sm-block" alt="">
+            <use xlink:href="#plus"></use>
+        </svg>
+        <img src="./img/index-2.jpg"
+             srcset="./img/index-2.jpg 1x, ./img/index-2@2x.jpg 2x"
+             class="paralax img-13 d-sm-none d-md-block"
+             direction="up"
+             alt="">
+    </div>
+    <div class="position-relative">
+    
+    
+    <section class="container-fluid m-auto max-width content-cols position-relative">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 position-relative">
+                <h2 class="z-1 position-relative">These testimonials can give you a better sense of the value clients have gained and key results they have achieved by working with us</h2>
+            </div>
+            
+            
+            <div class="col-lg-6 col-sm-12 offset-lg-3 mt-lg-5 pt-lg-5  position-relative z-1">
+                <div class="card-columns hero-cards">
+                    <div class="card card__gray">
+                        <div class="card-body">
+                            <svg class="quote my-4">
+                                <use xlink:href="#quote"></use>
+                            </svg>
+                            <p class="lead">
+                                To our greatest relief, the migration was completed for both our web sites and email system on time and without a glitch. Because of this positive experience, we entered into an ongoing support services contract with IT Partner.
+                            </p>
+                            <div class="small">
+                                <b>Alex Leblois</b>
+                                <br/>
+                                <span class="text-muted">
+                                    GLOBAL INITIATIVE FOR INCLUSIVE ICTs
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card card__gray">
+                        <div class="card-body">
+                            <svg class="quote my-4">
+                                <use xlink:href="#quote"></use>
+                            </svg>
+                            <p class="lead">
+                                They are client-oriented with exceptionally high standards in customer service. 
+                            </p>
+                            <div class="small">
+                                <b>Romain Faye</b>
+                                <br/>
+                                <span class="text-muted">
+                                    Ielo design Pte Ltd
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card card__gray">
+                        <div class="card-body">
+                            <svg class="quote my-4">
+                                <use xlink:href="#quote"></use>
+                            </svg>
+                            <p class="lead">
+                                IT Partner Team was quick to resolve any issues that arose during the migration process. 
+                            </p>
+                            <div class="small">
+                                
+                                <br/>
+                                <span class="text-muted">
+                                    FEDERAL CREDIT UNION
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../img/index-3.jpg"
+                                 width="100%"
+                                 srcset="../img/index-3.jpg 1x, ../img/index-3@2x.jpg 2x"
+                                 alt="">
+                        </div>
+                    </div>
+        
+                    <div class="card card__gray">
+                        <div class="card-body">
+                            <svg class="quote my-4">
+                                <use xlink:href="#quote"></use>
+                            </svg>
+                            <p class="lead">
+                                CDIC Dental recommends IT Partner’s services to any and every company looking to implement Microsoft services or products.
+                            </p>
+                            <div class="small">
+                                <b>Francis Nguyen</b>
+                                <br/>
+                                <span class="text-muted">
+                                    Cosmetic and Dental Implant Center
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-sm-12">
+                <a href="/migrate-to-the-cloud" class="card card__blue">
+                    <div class="card-body">
+                        <h5 class="card-title">Migrate to the Cloud</h5>
+                        <p class="card-text">Discover</p>
+                    </div>
+                    <svg class="card-arrow">
+                        <use xlink:href="#card-arrow"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+        <img src="./img/cloud-l-side-big.png" direction="down" class="paralax img-14" alt="">
+        <img src="./img/cloud-med.png" direction="down" class="paralax img-15" alt="">
+        <svg direction="up" class="paralax img-16 plus d-sm-none d-md-block d-none d-sm-block" alt="">
+            <use xlink:href="#plus"></use>
+        </svg>
+        <div direction="down" class="paralax cube-blue d-sm-none d-md-block d-none d-sm-block"></div>
+    </div>
+</div>
+
+{% endblock content %}
+</div>
+
+{% block footer %}
+<footer class="site-footer d-flex justify-content-between">
+    <div class="container-fluid max-width m-auto">
+        <div class="row py-5">
+            <div class="col-lg-6 col-sm-12">
+               <div class="site-footer__side-text">
+                   <p>
+                       <a href="/" class="site-footer__logo">
+                           <b>IT Partners</b>
+                       </a>
+                   </p>
+                   <p>
+                       We offer a 100% satisfaction guarantee. If you have questions, our knowledgeable staff can help find
+                       the
+                       best software solution for you.
+                   </p>
+                   <div class="site-footer__social">
+                       <a href="#">
+                           <svg>
+                               <use xlink:href="#fb"></use>
+                           </svg>
+                       </a>
+                       <a href="#">
+                           <svg>
+                               <use xlink:href="#ln"></use>
+                           </svg>
+                       </a>
+                       <a href="#">
+                           <svg>
+                               <use xlink:href="#tw"></use>
+                           </svg>
+                       </a>
+                   </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 d-lg-flex justify-content-start my-sm-5">
+                <div class="site-footer__links">
+                    <b>Questions?</b>
+                    <ul>
+                        <li>
+                            <a href="#">Get help</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">Request a quote</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="site-footer__links" >
+                    <b>Company info</b>
+                    <ul>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Return policies</a>
+                        </li>
+                        <li>
+                            <a href="#">Remote support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="site-footer__links">
+                    <b>Contact</b>
+                    <ul>
+                        <li>
+                            <a href="tel: + 1 844 611 6871">+ 1 844 611 6871</a> <small class="text-muted">(toll
+                            free)</small>
+                        </li>
+                        <li>
+                            <a href="mailto:info@buymssoft.com">info@buymssoft.com</a>
+                        </li>
+                        <li>
+                            <a href="#">3422 Old Capitol Trail<br> Ste.679, Wilmington, DE<br> 19808</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row py-lg-5 d-sm-flex">
+            <div class="col-lg-6 col-sm-12 text-muted">
+                &copy; 2017-<span id="currentYear"></span>. All Rights Reserved
+            </div>
+            <!--
+            <div class="col-lg-6 col-sm-12 d-lg-flex justify-content-start">
+                <ul class="d-lg-flex justify-content-lg-end">
+                    <li>
+                        <a href="#" class="text-muted">USA</a>
+                    </li>
+                    <li class="ml-lg-3">
+                        <a href="#" class="text-muted">Australia</a>
+                    </li>
+                    <li class="ml-lg-3">
+                        <a href="#" class="text-muted">United Kingdom</a>
+                    </li>
+                    <li class="ml-lg-3">
+                        <a href="#" class="text-muted">Canada</a>
+                    </li>
+                    <li class="ml-lg-3">
+                        <a href="#" class="text-muted">European Union</a>
+                    </li>
+                    <li class="ml-lg-3">
+                        <a href="#" class="text-muted">Thailand</a>
+                    </li>
+                    <li class="ml-lg-3">
+                        <a href="#" class="text-muted">India</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>-->
+        </div>
+        
+    </div>
+
+</footer>
+
+{% set path = current_path | truncate(length=4, end="") %}
+{% if path == '/por' %}
+</div>
+{% endif %}
+
+<script src="{{ config.base_url | safe }}js/main.min.js"></script>
+<script src="{{ config.base_url | safe }}js/search.js"></script>
+
+<script src="{{ get_url(path="elasticlunr.min.js") | safe }}" defer></script>
+<script src="{{ get_url(path="search_index.en.js") | safe }}" defer></script>
+
+<div class="svg-sprite">
+    <?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 50 54" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg fill="none" viewBox="0 0 18 18" id="arrow-l" xmlns="http://www.w3.org/2000/svg"><path d="M2 9l8.216 8M2 9l8.216-8M2 9h16" stroke="currentColor" stroke-width="2"/></svg><svg fill="none" viewBox="0 0 41 42" id="arrow-r" xmlns="http://www.w3.org/2000/svg"><path d="M37 21L18 2m19 19L18 40m19-19H0" stroke="currentColor" stroke-width="5"/></svg><svg fill="none" viewBox="0 0 20 19" id="arrow-t" xmlns="http://www.w3.org/2000/svg"><path d="M10 3l-8 8.216M10 3l8 8.216M10 3v16" stroke="#25272F" stroke-width="3"/></svg><svg fill="none" viewBox="0 0 31 31" id="arrow-tr" xmlns="http://www.w3.org/2000/svg"><path d="M28 3H1m27 0v27m0-27L2 29" stroke="currentColor" stroke-width="5"/></svg><svg fill="none" viewBox="0 0 31 31" id="card-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M28 3H1m27 0v27m0-27L2 29" stroke="currentColor" stroke-width="5"/></svg><svg fill="none" viewBox="0 0 34 34" id="cart" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 13H5l3.5 13.5h17L29 13h-2.5m-19 0L10 6m-2.5 7h19M24 6l2.5 7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/></svg><svg fill="none" viewBox="0 0 22 22" id="close" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.94 11L.47 1.53 1.53.47 11 9.94 20.47.47l1.06 1.06L12.06 11l9.47 9.47-1.06 1.06L11 12.06l-9.47 9.47-1.06-1.06L9.94 11z" fill="currentColor"/></svg><svg fill="none" viewBox="0 0 24 22" id="eye-close" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.668 17.986L6.33 20.665l1.342.67 10-20-1.342-.67-1.455 2.91A12.61 12.61 0 0012 3.25c-4.1 0-7.028 1.87-8.912 3.714-.94.921-1.627 1.84-2.08 2.531a12.9 12.9 0 00-.638 1.087l-.034.068-.01.02-.003.007v.002H.321L1 11l-.678-.32v.64L1 11l-.678.32v.001l.001.002.003.007.01.02.034.068a12.9 12.9 0 00.638 1.086 15.32 15.32 0 002.08 2.532c1.137 1.113 2.654 2.236 4.58 2.95zm.676-1.35l1.114-2.23A4.25 4.25 0 0113.2 6.922l.981-1.962A11.2 11.2 0 0012 4.75c-3.6 0-6.172 1.63-7.863 3.286a13.818 13.818 0 00-1.874 2.281c-.18.277-.319.51-.415.683.096.172.234.406.415.683a13.816 13.816 0 001.874 2.281c1.05 1.028 2.441 2.047 4.207 2.671zm4.169-8.338a2.75 2.75 0 00-2.367 4.733l2.367-4.733zM12 18.75c-.459 0-.902-.023-1.332-.067l.724-1.449c.2.01.402.016.608.016 3.6 0 6.172-1.63 7.863-3.286a13.815 13.815 0 001.874-2.281c.18-.277.319-.51.415-.683a11.568 11.568 0 00-.415-.683 13.817 13.817 0 00-1.874-2.281 11.945 11.945 0 00-2.834-2.075l.67-1.342c1.293.67 2.36 1.51 3.213 2.345.941.921 1.627 1.84 2.08 2.531a12.885 12.885 0 01.638 1.087l.034.068.01.02.003.007v.002h.001L23 11l.678.32v.001l-.001.002-.003.007-.01.02a6 6 0 01-.164.312c-.113.207-.282.497-.508.843-.453.69-1.139 1.61-2.08 2.53C19.028 16.88 16.1 18.75 12 18.75zM23 11l.678-.32v.64L23 11zm-6.75 0a4.25 4.25 0 01-3.857 4.232l.903-1.806a2.75 2.75 0 001.423-2.844l.903-1.807A4.23 4.23 0 0116.25 11z" fill="currentColor"/></svg><svg fill="none" viewBox="0 0 24 16" id="eye-open" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.263 8.683A11.63 11.63 0 011.848 8c.096-.173.234-.406.415-.683a13.818 13.818 0 011.874-2.281C5.828 3.38 8.4 1.75 12 1.75c3.6 0 6.172 1.63 7.863 3.286.847.829 1.466 1.66 1.874 2.281.18.277.319.51.415.683a11.58 11.58 0 01-.415.683 13.817 13.817 0 01-1.874 2.281C18.172 12.62 15.6 14.25 12 14.25c-3.6 0-6.172-1.63-7.863-3.286a13.818 13.818 0 01-1.874-2.281zM23.678 7.68L23 8l.678.32v.001l-.001.002-.003.007-.01.02a6.338 6.338 0 01-.164.312c-.113.207-.282.497-.508.843-.453.69-1.139 1.61-2.08 2.53C19.028 13.88 16.1 15.75 12 15.75c-4.1 0-7.028-1.87-8.912-3.714a15.32 15.32 0 01-2.08-2.531A12.904 12.904 0 01.37 8.418a5.107 5.107 0 01-.034-.068l-.01-.02-.003-.007v-.002H.321L1 8l-.678-.32v-.001l.001-.002.003-.007.01-.02.034-.068a12.904 12.904 0 01.638-1.086c.453-.691 1.14-1.61 2.08-2.532C4.972 2.12 7.9.25 12 .25c4.1 0 7.028 1.87 8.912 3.714.941.921 1.627 1.84 2.08 2.531a12.889 12.889 0 01.638 1.087l.034.068.01.02.003.007v.002h.001zM23 8l.678-.32v.64L23 8zM.322 7.68L1 8l-.678.32v-.64zM9.25 8a2.75 2.75 0 115.5 0 2.75 2.75 0 01-5.5 0zM12 3.75a4.25 4.25 0 100 8.5 4.25 4.25 0 000-8.5z" fill="currentColor"/></svg><svg fill="none" viewBox="0 0 10 20" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M2.955 10.89V20h3.522v-9.114H9.46l.442-3.567H6.497V5.05c0-1.032.278-1.73 1.703-1.73H10V.138A24.221 24.221 0 007.362 0C4.748 0 2.955 1.657 2.955 4.7v2.623H0v3.567h2.955z" fill="currentColor"/></svg><svg fill="none" viewBox="0 0 44 35" id="go-cart" xmlns="http://www.w3.org/2000/svg"><path d="M6 12H2l6 21h28l6-21h-4M6 12l5-11M6 12h3M33 1l5 11m0 0h-3M22 22.408l8-8m-8 8l-8-8m8 8V7" stroke="currentColor" stroke-width="4" stroke-linejoin="bevel"/></svg><svg fill="none" viewBox="0 0 14 14" id="ln" xmlns="http://www.w3.org/2000/svg"><path d="M12.966 0H1.033C.462 0-.001.463-.001 1.033v11.934C0 13.537.462 14 1.033 14h11.933c.57 0 1.033-.463 1.033-1.034V1.034C14 .463 13.536 0 12.966 0zM4.172 11.927H2.067V5.24h2.105v6.687zM3.12 4.314c-.67 0-1.213-.51-1.213-1.209 0-.698.542-1.208 1.213-1.208.67 0 1.213.51 1.213 1.208S3.79 4.314 3.12 4.314zm8.811 7.618H9.826V8.28c0-1.077-.458-1.41-1.049-1.41-.624 0-1.236.47-1.236 1.438v3.625H5.437V5.245H7.46v.927h.027c.203-.412.915-1.114 2.001-1.114 1.175 0 2.443.697 2.443 2.738v4.136z" fill="currentColor"/></svg><svg fill="none" viewBox="0 0 20 20" id="logo" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 0H20v4.25h-9.25V0zM9.25 0H0v4.25h9.25V0zM0 5.75v8.5h3.833v-8.5H0zM0 15.75V20h9.25v-4.25H0zM10.75 20H20V5.75h-3.833v10.083h-1.5V5.75H10.75V20zM9.25 14.25v-8.5H5.333v8.5H9.25z" fill="currentColor"/></svg><svg fill="none" viewBox="0 0 34 34" id="microsoft" xmlns="http://www.w3.org/2000/svg"><path d="M3.09 3.09h13.234v13.234H3.09V3.091z" fill="#F25022"/><path d="M17.675 3.09H30.91v13.234H17.675V3.091z" fill="#80BA01"/><path d="M3.09 30.91V17.674c4.412.001 8.823-.001 13.234.001V30.91" fill="#02A4EF"/><path d="M17.676 30.91V17.675H30.91v13.233" fill="#FFB902"/></svg><svg fill="none" viewBox="0 0 34 34" id="microsoft-teams" xmlns="http://www.w3.org/2000/svg"><path d="M30.909 13.91h-7.727v7.726a4.636 4.636 0 109.272 0v-6.181c0-.854-.691-1.546-1.545-1.546z" fill="#485BD5"/><path d="M17.773 2.318a4.636 4.636 0 100 9.273 4.636 4.636 0 000-9.273z" fill="#5161CB"/><path d="M10.045 13.91v9.78c0 4.115 3.106 7.709 7.213 7.975a7.727 7.727 0 008.242-7.71v-8.5c0-.854-.692-1.546-1.546-1.546H10.045z" fill="#6D81FF"/><path d="M27.818 4.636a3.09 3.09 0 100 6.182 3.09 3.09 0 000-6.182z" fill="#3440A0"/><path d="M15.701 24.727H2.844a1.3 1.3 0 01-1.299-1.299V10.572a1.3 1.3 0 011.3-1.3H15.7a1.3 1.3 0 011.299 1.3v12.856a1.3 1.3 0 01-1.299 1.3z" fill="#2D399A"/><path d="M12.416 13.136H6.13v1.329h2.355v6.398h1.578v-6.398h2.354v-1.33z" fill="#fff"/></svg><svg fill="none" viewBox="0 0 40 54" id="ms-office" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h33l7 7.026V54H0V0z" fill="#E64A19"/><path d="M10.727 21.454l12-4.363 6.546 1.636v18.546l-6.546 1.636-12-4.364 12 1.637V20.364L15.091 22v10.91l-4.364 1.636V21.454z" fill="#fff"/></svg><svg fill="none" viewBox="0 0 20 22" id="office-small" xmlns="http://www.w3.org/2000/svg"><path d="M.727 4.455l12-4.364 6.546 1.636v18.546l-6.546 1.636-12-4.363 12 1.636V3.364L5.091 5v10.91L.727 17.545V4.455z" fill="#E64A19"/></svg><svg fill="none" viewBox="0 0 50 50" id="plus" xmlns="http://www.w3.org/2000/svg"><path stroke="#25272F" stroke-width="2" d="M26 0v50M0 24h50"/></svg><svg fill="none" viewBox="0 0 28 23" id="quote" xmlns="http://www.w3.org/2000/svg"><path d="M16.702 23v-7.713c0-3.066.772-6.04 2.315-8.923C20.561 3.459 22.082 1.337 23.58 0l3.754 1.591c-1.193 1.337-2.35 3.124-3.473 5.36-1.1 2.214-1.65 4.382-1.65 6.503H28V23H16.702zM0 23v-7.713c0-3.066.772-6.04 2.316-8.923C3.86 3.459 5.38 1.337 6.877 0l3.755 1.591C9.439 2.928 8.28 4.715 7.158 6.951c-1.1 2.214-1.65 4.382-1.65 6.503h5.79V23H0z" fill="currentColor"/></svg><svg fill="none" viewBox="0 0 34 34" id="search" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 15a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0zm-1.688 6.872A9 9 0 1124 15c0 2.215-.8 4.244-2.128 5.812l6.658 6.658-1.06 1.06-6.658-6.658z" fill="currentColor"/></svg><svg fill="none" viewBox="0 0 14 8" id="shevton-b" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l6 6 6-6" stroke="#25272F" stroke-width="1.5" stroke-linejoin="bevel"/></svg><svg fill="none" viewBox="0 0 18 14" id="tw" xmlns="http://www.w3.org/2000/svg"><path d="M5.66 14c6.793 0 10.508-5.387 10.508-10.058 0-.153 0-.305-.01-.457A7.343 7.343 0 0018 1.655a7.63 7.63 0 01-2.121.556A3.58 3.58 0 0017.503.256a7.604 7.604 0 01-2.346.858A3.75 3.75 0 0013.062.047a3.84 3.84 0 00-2.341.372 3.606 3.606 0 00-1.623 1.658 3.4 3.4 0 00-.234 2.261 10.854 10.854 0 01-4.216-1.072A10.413 10.413 0 011.253.645 3.407 3.407 0 00.848 3.22a3.541 3.541 0 001.548 2.143A3.791 3.791 0 01.72 4.92v.045c0 .816.295 1.607.835 2.239A3.727 3.727 0 003.683 8.43a3.847 3.847 0 01-1.668.061 3.548 3.548 0 001.314 1.757c.619.44 1.366.684 2.137.698a7.624 7.624 0 01-4.587 1.516c-.294 0-.587-.018-.879-.05a10.799 10.799 0 005.66 1.584" fill="currentColor"/></svg><svg fill="none" viewBox="0 0 26 26" id="user" xmlns="http://www.w3.org/2000/svg"><path d="M6.882 19.118h12.236l-1.147-4.589H8.029l-1.147 4.589zM15.676 9.176a2.676 2.676 0 11-5.353 0 2.676 2.676 0 015.353 0z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="bevel"/></svg><svg fill="none" viewBox="0 0 26 26" id="windows" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.041 12.514V3.962l11.595-1.598v10.15H12.041zm-.959 0H2.363V5.291l8.72-1.201v8.424zm0 9.397l-8.719-1.202v-7.12h8.72v8.322zm.959.128l11.595 1.597V13.588H12.041v8.45z" fill="currentColor"/></svg></svg>
+</div>
+
+
+{% endblock footer %}
+</body>
+</html>

@@ -1,0 +1,100 @@
+{% extends "index.html" %}
+
+{% block title %} {{ config.title }} | {{ page.title }} {% endblock title %}
+
+
+{% block content %}
+
+<section class="container-fluid m-auto max-width content-cols position-relative">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12 my-5 py-5">
+            <h2>We always open for communication — call, write or come to visit</h2>
+        </div>
+    </div>
+    <div class="row pb-lg-5">
+        <div class="col-lg-8 col-sm-12 position-relative">
+            
+                <div class="map-holder-1 grayscale" >
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.386713376745!2d-75.63006658462481!3d39.7309633794507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c701fbed7f77f3%3A0x48add0d64c25cbd8!2s3422%20Old%20Capitol%20Trail%2C%20Wilmington%2C%20DE%2019808%2C%20USA!5e0!3m2!1sen!2sby!4v1610537852734!5m2!1sen!2sby" width="100%" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                </div>
+                <div class="card card__black  text-white w-lg-50 map-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Wilmington, DE</h3>
+                        <p class="card-text">info@o365hq.com</p>
+                        <p class="card-text">+1 (844) 611-6871</p>
+                        <p class="card-text">3422 Old Capitol Trail Ste.679</p>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-3 offset-md-1 col-sm-12">
+            <div id="app"></div>
+
+                <script>
+                    const appDiv = document.getElementById('app');
+                    appDiv.innerHTML = `
+                    <div class="my-5">
+                      <div class="app">
+                        <form name="fetch" class="my-b">
+                            <h3>If you have any questions, don't hesitage to contact with us</h3>
+                        <div class="form-group">
+                          <input type="text" placeholder="Your name" class="form-control" name="firstname" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your surname" class="form-control" name="lastname" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your phone" class="form-control" name="telephone1" patttern="/^\d+$/" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Company name" class="form-control" name="companyname" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-mail" class="form-control" name="emailaddress1" required>
+                        <div class="form-group">
+                            <span class="form__error">E-mail isn't valid. Plese, check</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="subject" value="{{ page.title }}">
+                        </div>
+                        </div>
+                          <button class="btn btn-primary w-100" type="submit">Send</button>
+                        </form>
+                      </div>
+                    `;
+                
+                    // selectors
+                    const app = document.querySelector('.app');
+                    const form = document.forms.fetch;
+                
+                    const postForm = body => {
+                      return fetch('https://thegreatintegrator20200130015020.azurewebsites.net/api/Lead', {
+                        method: 'POST',
+                        headers: {
+                          'Content-Type': 'application/json',
+                        },
+                        body
+                      });
+                    };
+                
+                    const handleSubmit = async (e) => {
+                      e.preventDefault();
+                      const body = JSON.stringify(Object.fromEntries(new FormData(e.target)));
+                
+                      const res = await postForm(body);
+                      const data = await res.json().then(res => alert("Your message has been sent. We will call you ASAP"), console.log(res))
+                      .catch(error => alert('Error!', error.message));
+              
+                      form.reset();
+                    };
+                
+                    form.addEventListener('submit', handleSubmit);
+                
+                </script>
+
+        </div>
+    </div>
+</section>
+
+</div>
+{% endblock content %}

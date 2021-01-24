@@ -1,0 +1,22 @@
+.product-description {
+  padding-top: 300px;
+}
+.related-file {
+  display: block;
+  max-width: 140px;
+  color: $dark;
+  line-height: 1.5rem;
+  letter-spacing: -0.4px;
+
+  svg {
+    width: 75px;
+    height: 98px
+  }
+
+  text-decoration: none;
+
+  span {
+    display: block;
+    margin-top: 1.5em;
+  }
+}

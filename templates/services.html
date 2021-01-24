@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+
+{% block title %} {{ config.title }} | {{ section.title }} {% endblock title %}
+
+
+{% block content %}
+
+<div class="container-fluid max-width m-auto">
+  <div class="row my-5">
+      <div class="col-lg-2 col-md-3 col-sm-12">
+
+          {% set products = get_taxonomy(kind="products") %}
+          <ul class="nav nav-pills flex-lg-column">
+            {% for product in products.items %}    
+              <li class="nav-item">
+                  <a class="nav-link" href="{{product.permalink}}">{{product.name}}</a>
+              </li>
+            {% endfor %}
+          </ul>
+
+      </div>
+      <div class="col-lg-10 col-md-9 col-sm-12 services-cloud-cards">
+          <ul class="nav nav-tabs">
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">Cloud services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Cloud subscription</a>
+              </li>
+          </ul>
+
+          {% set types = get_taxonomy(kind="types") %}
+          <ul class="nav nav-pills justify-content-between">
+
+              {% for type in types.items %}    
+  
+                <li class="nav-item">
+                    <a class="nav-link" href="{{type.permalink}}">{{type.name}}</a>
+                </li>
+  
+              {% endfor %}
+            </ul>
+  
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+   
+            {% for page in section.pages %}
+            {{ macro::servicecard(page=page) }}
+            {% endfor %}
+            
+          </div>
+          
+      </div>
+  </div>
+</div>
+
+             
+{% endblock content %}

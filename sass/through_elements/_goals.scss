@@ -1,0 +1,24 @@
+.goals {
+  @include flexbox($direction: row, $justify-content: space-between, $align-items: flex-start);
+
+  &__item {
+    text-align: center;
+    @include flexbox($justify-content: center, $align-items: space-between);
+
+    .num {
+      margin-bottom: 20px;
+      border: 1px solid $dark;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      white-space: nowrap;
+      font-weight: 500;
+      line-height: 1;
+      @include flexbox($justify-content: center, $align-items: center);
+
+      b{
+        font-size: 1.875rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{% macro paginator_block() %}
+{% if paginator.number_pagers <= 5 %}
+    {% set start = 1 %}
+    {% set end = paginator.number_pagers %}
+{% endif %}
+{% if paginator.number_pagers > 5 %}
+    {% if paginator.current_index >= 3 %}
+        {% set start = paginator.current_index - 2 %}
+        {% if paginator.number_pagers - paginator.current_index < 2 %}
+            {% set difference = paginator.number_pagers - paginator.current_index %}
+            {% set compensation =  1 - difference %}
+            {% set start = paginator.current_index - 3 - compensation %}
+        {% endif %}
+    {% else %}
+        {% set start = 1 %}
+    {% endif %}
+    {% if paginator.number_pagers >= paginator.current_index + 2 %}
+        {% set end = paginator.current_index + 2 %}
+        {% if paginator.current_index <= 3 %}
+            {% set end = 5 %}
+        {% endif %}
+    {% else %}
+        {% set end = paginator.number_pagers %}
+    {% endif %}
+{% endif %}
+{% for i in range(start=start, end=end+1) %}
+    {% if i == paginator.current_index %}
+        <li class="page-item active"><a class="page-link" href="{{ paginator.base_url }}{{ i }}"><div>{{ i }}</div></a></li>
+    {% else %}
+        <li class="page-item"><a class="page-link" href="{{ paginator.base_url }}{{ i }}">{{ i }}</a></li>
+    {% endif %}
+{% endfor %}
+{% endmacro paginator_block %}
+
+{% macro servicecard(page) %}
+              <div class="col mb-4">
+                <div class="card card__gray card__hover-inverse">
+                    <div class="card-body">
+                        <svg class="card__logo">
+                            <use xlink:href="#microsoft"></use>
+                        </svg>
+                        <h5 class="card-title"><a href="{{ page.permalink | safe }}" >{{ page.title }}</a></h5>
+                        <p class="text-muted border-bottom pb-1">
+                          {{ page.extra.price }}
+                            <span class="card__divider">/</span>
+                            {{ page.extra.sku }}
+                        </p>
+                        <p class="card-text">{{ page.description }}</p>
+                        <p>
+                            {% if page.taxonomies.types %}
+                            {% for type in page.taxonomies.types %}
+                              <a href="{{ get_taxonomy_url(kind="types", name=type) | safe }}" class="tag-lnk" >{{ type }}</a>
+                            {% endfor %}
+                        {% endif %}
+                        /
+                        {% if page.taxonomies.products %}
+                          {% for product in page.taxonomies.products %}
+                           <a href="{{ get_taxonomy_url(kind="products", name=product) | safe }}" class="tag-lnk" >{{ product }}</a>
+                          {% endfor %}
+                        {% endif %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+{% endmacro servicecard %}
+
+{% macro index_page(path) %}
+
+{% set index_page = get_page(path=path) %}
+<div class="row border-dark border-top pt-5 pb-5 mb-5 position-relative z-3">
+    <div class="col-lg-6 col-sm-12 pr-lg-5">
+        <h3><a class="h3 text-dark d-block font-weight-bold mb-4" href="{{ index_page.permalink | safe }}">{{ index_page.title }}</a></h3>
+    </div>
+    <div class="col-lg-5 col-sm-12">
+        <p> {{ index_page.description }} </p>
+    </div>
+    <div class="col-lg-1 col-sm-12">
+        <svg class="feature-arrow float-right">
+            <use xlink:href="#arrow-r"></use>
+        </svg>
+    </div>
+</div>
+
+{% endmacro index_page %}
+
+
+{% macro list_articles(pages) %}
+    {% for page in pages %}
+        {{ self::article(page=page) }}
+    {% endfor %}
+{% endmacro list_articles %}
+
+{% macro article(page) %}
+<article>
+    <div>
+    {% if page.date %}
+        <date>{{ page.date }}</date>
+    {% endif %}
+        <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+    </div>
+    {% if page.description %}
+        <p>{{ page.description | safe }}</p>
+    {% endif %}
+    <ul id="tags_article">
+    {% if page.taxonomies.tags %}{% for tag in page.taxonomies.tags %}{% if loop.last %}<li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >{{ tag }}</a>;</li>
+    {% else %}<li><a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}" >{{ tag }}</a>,</li>{% endif %}{% endfor %}{% endif %}
+    </ul>
+</article>
+{% endmacro article %}

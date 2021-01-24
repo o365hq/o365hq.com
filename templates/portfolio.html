@@ -1,0 +1,116 @@
+{% extends "index.html" %}
+
+{% block title %} {{ config.title }} | {{ page.title }} {% endblock title %}
+
+{% block content %}
+        
+<section class="container-fluid max-width m-auto position-relative z-1">
+    <div class="row">
+        
+        <div class="col-lg-3 offset-lg-3 col-sm-12 pt-5">
+            {% set s = get_section(path="portfolio/_index.md", include_pages=false) %}
+            {% for page in s.pages %}
+            <div class="pb-5">
+                <p class="text-muted">{{ page.date }}</p>
+                <p class="text-lead">
+                    <a href="{{ page.permalink | safe }}" class="text-dark">
+                        <b>{{ page.description }}</b>
+                    </a>
+                </p>
+                <p>
+                    {{ page.title }}
+                </p>
+            </div>    
+            {% endfor %}
+        </div>
+
+        <div class="col-lg-5 offset-lg-1 col-sm-12">
+            <h2 class="mb-lg-5">{{ page.title }}</h2>
+            <div class="mb-lg-5">
+                <p class="lead">
+                    {{ page.description }}
+                </p>
+            </div>
+            <div class="mb-lg-5">
+              {{ page.content | safe }}
+            </div>
+            <p>
+                <b>{{ page.title }}</b>
+                <br>
+                <span class="text-muted"></span>
+            </p>
+            <div class="py-5 border-bottom border-secondary">
+                <a href="{{ page.extra.pdf | safe }}" class="text-dark d-flex align-items-center">
+                    
+                    <svg class="floated-ico">
+                        <use xlink:href="#ms-office"></use>
+                    </svg>
+                    <span>
+                    <b>
+                        {{ page.title }}
+                    </b>
+                    <br>
+                    <span class="text-muted">
+                        1 mb
+                    </span>
+                </span>
+                
+                </a>
+            </div>
+            
+            
+            <h2 class="my-5">Similar posts</h2>
+            {% set b = get_section(path="blog/_index.md") %}
+
+            <div class="container">
+            {% for page in b.pages | slice(end=3) %}
+                <div class="row border-dark border-top py-5">
+                    <div class="text-muted col-12">
+                        <p>{{ page.date }}</p>
+                    </div>
+                    <div class="col-10">
+                        
+                        <a href="{{ page.permalink | safe }}" class="h3 text-dark d-block font-weight-bold mb-4">{{ page.title }}</a>
+                        <p>{{ page.description }}</p>
+                    </div>
+                    
+                    <div class="col-1 offset-1">
+                        <svg class="feature-arrow float-right">
+                            <use xlink:href="#arrow-r"></use>
+                        </svg>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+
+            <div class="back-to-top__wrapper" id="back-to-top-wrapper">
+                <div class="max-width m-auto">
+                    <div class="back-to-top__item" id="back-to-top-customScroll">
+                        <svg>
+                            <use xlink:href="#arrow-l"></use>
+                        </svg>
+                        <b>
+                            To top
+                        </b>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
+<img src="{{config.base_url | safe}}img/cloud-l-side-big.png" direction="up" class="paralax img-17" alt="">
+<img src="{{config.base_url | safe}}img/cloud-big-r-side.png" direction="down" class="paralax img-18" alt="">
+<img src="{{config.base_url | safe}}img/portfolio/portfolio1.jpg"
+     srcset="{{config.base_url | safe}}img/portfolio/portfolio1.jpg 1x, {{config.base_url | safe}}img/portfolio/portfolio1@2x.jpg 2x"
+     class="paralax img-19 d-sm-none d-md-block"
+     direction="down">
+
+ 
+</div>
+{% endblock content %}

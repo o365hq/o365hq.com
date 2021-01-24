@@ -1,0 +1,14 @@
+.nav-pills{
+  margin: 1rem 0;
+  .nav-link{
+    display: inline-block;
+    margin: .5rem auto;
+    width: auto;
+    color: $black;
+    @include font-size(1rem);
+    &.active{
+      border: 2px solid $black;
+    }
+
+  }
+}

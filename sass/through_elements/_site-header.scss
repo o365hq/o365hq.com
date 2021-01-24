@@ -1,0 +1,70 @@
+.site-header {
+  border-bottom: 1px solid $gray-200;
+  background: white;
+  padding: 0;
+  &__logo {
+    @include black-lnk;
+
+    svg {
+      $logo-size: 20px;
+      width: $logo-size;
+      height: $logo-size;
+      margin-right: $logo-size/2;
+      vertical-align: -4px;
+    }
+  }
+
+  &__icon-lnk {
+    display: inline-block;
+    color: $black;
+    border-radius: 100%;
+    width: 34px;
+    height: 34px;
+    line-height: 31px;
+    text-align: center;
+    transition: .35s ease-in-out;
+
+    &.active,
+    &:hover {
+      background: black;
+      color: white;
+    }
+
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .dropdown-toggle::after {
+    border: none;
+    height: 4px;
+    width: 8px;
+    margin-left: 7px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAMAAADNLv/0AAAAFVBMVEUAAAAkKDAjJi4lKC0kJi4mKDAlJy9+17YEAAAABnRSTlMAQF9gf4Co820VAAAAJ0lEQVQI1zXGsQHAIAwDMIXG/v9klqJJDDBMA+mwDenCNv/YvvEduA6BAHAq2m01AAAAAElFTkSuQmCC);
+  }
+
+  .nav-link {
+    color: $black;
+    margin: 0 1rem;
+    padding: 2rem 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    @include media-breakpoint-down(sm){
+      margin: 0 ;
+      padding: 1rem 0;
+      border-bottom: 1px solid $gray-500;
+    }
+
+    &.active {
+      border-bottom: 2px solid $black;
+    }
+
+    @include hover-focus {
+      color: $gray-600;
+
+    }
+  }
+}

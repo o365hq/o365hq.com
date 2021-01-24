@@ -1,0 +1,11 @@
+.jumbotron{
+  border-radius: 0;
+  padding: 2.5rem;
+}
+.jumbotron-arrow{
+  position: absolute;
+  top: $jumbotron-padding;
+  right: $jumbotron-padding;
+  width: 1.688rem;
+  height: 1.688rem;
+}

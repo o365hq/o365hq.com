@@ -1,0 +1,26 @@
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail, .mCS-light-3.mCSB_scrollTools .mCSB_draggerRail,
+.mCSB_draggerContainer{
+  width: 1px;
+  height: 100vh;
+  border-radius: 0;
+  background: rgba(89, 89, 145, 0.2);
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  width: 2px;
+  background: $black;
+  border-radius: 0;
+}
+.mCSB_scrollTools{
+  left: 53vw;
+}
+.mCSB_inside>.mCSB_container{
+  margin-right: 0;
+}
+.center-scroll-holder{
+  @include media-breakpoint-up(sm){
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+}

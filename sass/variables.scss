@@ -1,0 +1,63 @@
+$max-width: 1600px;
+
+$black: #25272F;
+$gray-500: #98999A;
+$gray-600: rgba(54, 64, 102, 0.5);
+$gray-200: rgba(89, 89, 145, 0.2);
+$blue: #2F2BD8;
+
+$body-bg: white;
+$body-color: $black;
+
+$font-family-base: 'Poppins', Roboto, 'Helvetica Neue', sans-serif;
+$lead-font-size: 1.75rem;
+$enable-responsive-font-sizes: true;
+
+$nav-pills-border-radius: 20px;
+$nav-pills-link-active-color: $black;
+$nav-pills-link-active-bg: white;
+
+
+$card-spacer-y: 2.5rem;
+$card-spacer-x: 2.5rem;
+$card-img-overlay-padding: 2.5rem;
+$card-border-width: 0;
+$card-border-radius: 0;
+
+$card-spacer-y: 1.25rem;
+
+
+$nav-tabs-link-hover-border-color: $black;
+$nav-tabs-link-active-color: $black;
+$nav-tabs-link-active-border-color: none;
+
+$input-padding-x: 0;
+$input-border-width: 0;
+$input-box-shadow: none;
+
+$input-border-color: $black;
+
+$input-border-radius: 0;
+$input-border-radius-lg: 0;
+$input-border-radius-sm: 0;
+
+$input-focus-box-shadow: none;
+
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+
+$input-btn-padding-y: .85rem;
+
+
+$pagination-color:                  $black;
+$pagination-border-color:           $black;
+$pagination-hover-bg:               transparent;
+$pagination-active-color:           $black;
+$pagination-active-bg:              transparent;
+$pagination-active-border-color:    $black;
+
+$jumbotron-padding:                 2.5rem;
+$jumbotron-color:                   $black;
+$jumbotron-bg:                      rgba(47, 43, 216, 0.04);
+
