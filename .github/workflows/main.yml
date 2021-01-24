@@ -1,0 +1,22 @@
+  
+name: Upload To Azure Blob Storage
+on:
+  push:
+    branches:
+      - master
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: shalzz/zola-deploy-action@master
+        env:
+          BUILD_DIR: .
+          TOKEN: ${{ secrets.TOKEN }}
+          BUILD_ONLY: true
+      - uses: bacongobbler/azure-blob-storage-upload@v1.1.1
+        with:
+          source_dir: 'public'
+          container_name: '$web'
+          connection_string: ${{ secrets.ConnectionString }}
+          sync: true
