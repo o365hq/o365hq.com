@@ -2,7 +2,7 @@
 title = "Migrate to the Cloud"
 +++
 
-![Image](http://127.0.0.1:1111/untitled.png)
+![Image](/untitled.png)
 
 ### Why cloud?
 
@@ -34,4 +34,4 @@ Microsoft Gold Partner since 2006. Deep partner relationships with Microsoft: ou
 
 Flexibility and ease of decision making. We aren’t a big corp, we move fast.
 
-![Image](http://127.0.0.1:1111/migrate2.png)
+![Image](/migrate2.png)

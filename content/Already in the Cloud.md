@@ -6,7 +6,7 @@ title = "Already in the Cloud"
 
 But you can achieve more with our competencies, best practices, perks and benefits. 
 
-![Image](http://127.0.0.1:1111/already.png)
+![Image](/already.png)
 
 
 ### IT Partner’s benefits:
