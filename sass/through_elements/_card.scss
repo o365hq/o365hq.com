@@ -50,7 +50,7 @@
   }
 
   &.card__gray {
-    background: #bcd7e7;
+    background: #d2e7ed;
   }
   &.card__hover-inverse:hover {
     background: $black;
@@ -62,7 +62,7 @@
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     &.card__gray {
       backdrop-filter: blur(10px);
-      background-color: rgba(#bcd7e7, 0.8);
+      background-color: rgba(#d2e7ed, 0.8);
     }
   }
 
