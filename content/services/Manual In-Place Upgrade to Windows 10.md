@@ -4,7 +4,7 @@ description = "If you have Windows 7 or Windows 8 on PCs in your organization an
 date = 2019-06-03
 
 [taxonomies]
-products = ["Windows Server SCCM"]
+products = ["SCCM"]
 types = ["Implementation"]
 
 [extra]

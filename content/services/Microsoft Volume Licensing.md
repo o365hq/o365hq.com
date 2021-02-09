@@ -4,7 +4,7 @@ description = "Get all the help you need choosing and buying Microsoft Volume Li
 date = 2018-02-02
 
 [taxonomies]
-products = ["Windows Server SCCM"]
+products = ["SCCM"]
 types = ["Consulting"]
 
 [extra]

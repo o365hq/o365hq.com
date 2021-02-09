@@ -4,7 +4,7 @@ description = "Remote help desk service to help solve outstanding issues for use
 date = 2019-07-24
 
 [taxonomies]
-products = ["Windows Server SCCM"]
+products = ["SCCM"]
 types = ["Managed Services"]
 
 [extra]

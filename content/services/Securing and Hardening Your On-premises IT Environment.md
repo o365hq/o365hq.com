@@ -4,7 +4,7 @@ description = "We implement best practices to make your on-premises IT infrastru
 date = 2018-07-30
 
 [taxonomies]
-products = ["Windows Server SCCM"]
+products = ["SCCM"]
 types = ["Implementation"]
 
 [extra]

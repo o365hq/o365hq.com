@@ -4,7 +4,7 @@ description = ""
 date = 2018-07-10
 
 [taxonomies]
-tags = ["Office 365"]
+tags = ["office 365"]
 +++
 
 1.  Please log in to your [Office 365 Admin

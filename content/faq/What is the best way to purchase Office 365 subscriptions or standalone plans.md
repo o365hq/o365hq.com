@@ -4,7 +4,7 @@ description = "What is the best way to purchase Office 365 subscriptions or stan
 date = 2018-06-22
 
 [taxonomies]
-tags = ["Office 365"]
+tags = ["office 365"]
 +++
 
 You can purchase your Office 365 subscription in a few different ways

@@ -4,7 +4,7 @@ description = "Our CIO on Demand service provides an affordable way to inject so
 date = 2018-07-30
 
 [taxonomies]
-products = ["Windows Server SCCM"]
+products = ["SCCM"]
 types = ["Managed Services"]
 
 [extra]

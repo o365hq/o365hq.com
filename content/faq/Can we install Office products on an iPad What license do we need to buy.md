@@ -4,7 +4,7 @@ description = ""
 date = 2018-07-12
 
 [taxonomies]
-tags = ["Office Apps"]
+tags = ["office apps"]
 +++
 
 The single Office Volume License permits you to install/access Office in

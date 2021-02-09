@@ -4,7 +4,7 @@ description = "Microsoft Exchange Server safe decommissioning in your organizati
 date = 2019-06-26
 
 [taxonomies]
-products = ["Windows Server SCCM"]
+products = ["SCCM"]
 types = ["Implementation"]
 
 [extra]

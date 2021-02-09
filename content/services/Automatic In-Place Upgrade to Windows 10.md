@@ -4,7 +4,7 @@ description = "The simplest path to upgrade PCs currently running Windows 7, Win
 date = 2019-05-22
 
 [taxonomies]
-products = ["Windows Server SCCM"]
+products = ["SCCM"]
 types = ["Implementation"]
 
 [extra]

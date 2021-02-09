@@ -4,7 +4,7 @@ description = "IT systems monitoring is an integral part of  enterprise informat
 date = 2019-12-16
 
 [taxonomies]
-products = ["Windows Server SCCM"]
+products = ["SCCM"]
 types = ["Managed Services"]
 
 [extra]

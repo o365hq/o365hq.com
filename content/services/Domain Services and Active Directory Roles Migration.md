@@ -4,7 +4,7 @@ description = "This service allows you to transfer the typical functions of a do
 date = 2019-06-03
 
 [taxonomies]
-products = ["Windows Server SCCM"]
+products = ["SCCM"]
 types = ["Migration"]
 
 [extra]

@@ -4,7 +4,7 @@ description = "End of support is coming for two commonly deployed server product
 date = 2019-03-20
 
 [taxonomies]
-tags = ["Windows Server"]
+tags = ["windows server"]
 +++
 
 ### End of Support for SQL Server 2008 and 2008 R2 is scheduled for July 9, 2019.
