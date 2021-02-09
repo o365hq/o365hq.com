@@ -4,7 +4,7 @@ description = "What is Software Assurance and what benefits does it provide?"
 date = 2018-06-25
 
 [taxonomies]
-tags = ["Software Assurance"]
+tags = ["software assurance"]
 +++
 
 Software Assurance for Volume Licensing includes a range of benefits

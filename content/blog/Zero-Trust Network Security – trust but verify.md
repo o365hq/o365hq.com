@@ -4,7 +4,7 @@ description = "Perimeter-based networks protected by a firewall are familiar to 
 date = 2019-04-29
 
 [taxonomies]
-tags = ["advanced threat protection", "cloud security", "microsoft 365", "microsoft azure, office 365"]
+tags = ["advanced threat protection", "cloud security", "microsoft 365", "microsoft azure", "office 365"]
 +++
 
 The limitations of this model were improved in an alternative IT
