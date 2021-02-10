@@ -72,7 +72,7 @@
                         method: 'POST',
                         mode: 'no-cors',
                         headers: {
-                          'Content-Type': 'text/plain; charset=UTF-8',
+                          'Content-Type': 'application/json; charset=UTF-8',
                         },
                         body
                       });
@@ -81,9 +81,10 @@
                     const handleSubmit = async (e) => {
                       e.preventDefault();
 
-                      const body = JSON.stringify(Object.fromEntries(new FormData(e.target)));
+                      const body = JSON.stringify(Object.fromEntries(new FormData(e.target)) );
 
-                      const res = await postForm(body);
+                      const res = await postForm(JSON.parse(body));
+
                       const data = await res.json().then(res => alert("Your message has been sent. We will call you ASAP"), console.log(res))
                       
                       .catch(error => alert('Error!', error.message));
