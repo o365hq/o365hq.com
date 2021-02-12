@@ -28,73 +28,72 @@
                 </div>
         </div>
         <div class="col-lg-3 offset-md-1 col-sm-12">
-            <div id="app"></div>
+            <div id="app">
 
-                <script>
-                    const appDiv = document.getElementById('app');
-                    appDiv.innerHTML = `
-                    <div class="my-5">
-                      <div class="app">
-                        <form name="fetch" class="my-b">
-                            <h3>If you have any questions, don't hesitage to contact us</h3>
-                        <div class="form-group">
-                          <input type="text" placeholder="Your name" class="form-control" name="firstname" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your surname" class="form-control" name="lastname" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Your phone" class="form-control" name="telephone1" patttern="/^\d+$/" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Company name" class="form-control" name="companyname" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="E-mail" class="form-control" name="emailaddress1" required>
-                        <div class="form-group">
-                            <span class="form__error">E-mail isn't valid. Plese, check</span>
-                        </div>
-                        <div class="form-group">
-                            <input type="hidden" name="subject" value="{{ page.title }}">
-                        </div>
-                        </div>
-                          <button class="btn btn-primary w-100" type="submit">Send</button>
-                        </form>
-                      </div>
-                    `;
-                
-                    // selectors
-                    const app = document.querySelector('.app');
-                    const form = document.forms.fetch;
-                
-                    const postForm = body => {
-                      return fetch('https://prod-27.eastus.logic.azure.com/workflows/184852f2f07c4c00b244b2b68c0ff3b9/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=SGoNOROHSFiumCkT9_50x8phORLmSOuil8eeXYqIc20', {
-                        method: 'POST',
-                        mode: 'no-cors',
-                        headers: {
-                          'Content-Type': 'application/json; charset=UTF-8',
-                        },
-                        body
-                      });
-                    };
-                
-                    const handleSubmit = async (e) => {
-                      e.preventDefault();
+              <div class="my-5">
+                <div class="app">
+                  <form name="fetch" class="my-b">
+                      <h3>If you have any questions, don't hesitage to contact us</h3>
+                  <div class="form-group">
+                    <input type="text" placeholder="Your name" class="form-control" name="firstname" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" placeholder="Your surname" class="form-control" name="lastname" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="tel" placeholder="Your phone" class="form-control" name="telephone1" patttern="/^\d+$/" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" placeholder="Company name" class="form-control" name="companyname" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" placeholder="E-mail" class="form-control" name="emailaddress1" required>
+                  <div class="form-group">
+                      <span class="form__error">E-mail isn't valid. Plese, check</span>
+                  </div>
+                  <div class="form-group">
+                      <input type="hidden" name="subject" value="Contacts">
+                  </div>
+                  </div>
+                    <button class="btn btn-primary w-100" type="submit">Send</button>
+                  </form>
+                </div>
 
-                      const body = JSON.stringify(Object.fromEntries(new FormData(e.target)) );
+            </div>
 
-                      const res = await postForm(JSON.parse(body));
+            <script>
+            
+              const form = document.forms.fetch;
 
-                      const data = await res.json().then(res => alert("Your message has been sent. We will call you ASAP"), console.log(res))
-                      
-                      .catch(error => alert('Error!', error.message));
-              
-                      form.reset();
-                    };
-                
-                    form.addEventListener('submit', handleSubmit);
-                
-                </script>
+              form.addEventListener('submit', function(evt) {
+                  evt.preventDefault();
+
+                  var data = new FormData(form);
+
+                  xhr = new XMLHttpRequest(); 
+                  var url = 'https://prod-27.eastus.logic.azure.com:443/workflows/184852f2f07c4c00b244b2b68c0ff3b9/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=SGoNOROHSFiumCkT9_50x8phORLmSOuil8eeXYqIc20'; 
+                  xhr.open("POST", url, true); 
+                  xhr.setRequestHeader("Content-type", "application/json"); 
+                  xhr.onreadystatechange = function () {  
+                          alert("Your message has been sent. We will call you ASAP");
+                      } 
+
+                  var sendto = getQueryString(data);
+                  xhr.send(sendto); 
+
+                  form.reset();
+                })
+
+                function getQueryString(formData){
+                  var pairs = [];
+                  for (var [key, value] of formData.entries()) {
+                    pairs.push("\"" + key + "\"" + ':' + "\"" + value + "\"");
+                  }
+                  return '{' + pairs.join(',') + '}';
+                }
+          
+          </script>
+
 
         </div>
     </div>
