@@ -14,6 +14,6 @@ jobs:
           tar -xvf zola-v0.13.0-x86_64-unknown-linux-gnu.tar.gz
           chmod +x zola
           ./zola check
-      - uses: heytitle/github-action-yaspeller@v0.0.7 -e ignore-uppercase ignore-urls
+      - uses: heytitle/github-action-yaspeller@v0.0.7
         with:
           ext: ".md"
