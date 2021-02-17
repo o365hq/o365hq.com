@@ -118,7 +118,7 @@ explanation](https://www.youtube.com/watch?v=KmfxCd5ublI).
 
   What does it not  OME      Some applications may not support IRM emails on all devices. For more information     S/MIME doesn't
   do?\              doesn't let you   about these and other products that support IRM email, see [Client device             allow encrypted
-                    apply usage       capabilities](https://docs.microsoft.com/en-us/azure/information-protection/requirements#BKMK_ClientCapabilities).\   messages to be
+                    apply usage       capabilities](https://docs.microsoft.com/en-us/azure/information-protection/requirements).\   messages to be
                     restrictions to                                                                                                  scanned for
                     messages. For                                                                                                    malware, spam, or
                     example, you                                                                                                     policies.\
