@@ -85,8 +85,6 @@ behavior for both users and entities, and it's that unique capability
 that provides timely and accurate alerts across a huge variety of attack
 vectors.
 
-Also, we provide [Free Office 365 Security
-Assessment](https://o365hq.com/services/free-office-365-security-assessment-service)
-. We can help you evaluate how secure your business really is and find a
+Also, we provide [Free Office 365 Security Assessment](o365hq.com/services/free-office-365-security-assessment-service). We can help you evaluate how secure your business really is and find a
 solution that will help to simplify security and reduce costs while
 still getting the protection you need.

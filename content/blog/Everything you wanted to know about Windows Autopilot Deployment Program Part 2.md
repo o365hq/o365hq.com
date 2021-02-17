@@ -11,15 +11,15 @@ If you would like to read the other parts in this article series,
 please go to:
 
 -   [Part
-    1](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
+    1](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
 -   [Part
-    3](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-3)
+    3](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-3)
 -   [Part
-    4](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-4)
+    4](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-4)
 
 In the previous article, we discussed in detail the [modern way of
 Windows deployment with
-Autopilot](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
+Autopilot](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
 . In case you missed it, here is a short recap. Autopilot basic flow
 always has three steps:
 

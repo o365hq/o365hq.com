@@ -35,9 +35,7 @@ fraud.](https://support.office.com/en-us/article/protect-yourself-from-phishing-
 
 ### Check out your organization's Secure Score
 
-[Secure
-score](https://docs.microsoft.com/en-us/office365/securitycompliance/office-365-secure-score)
-gives you a view of the organization's security posture. This indicator is
+Secure score gives you a view of the organization's security posture. This indicator is
 determined for each organization automatically and shows how it is doing in
 terms of security. The Secure Score also provides an analysis of possible
 threats and gives recommendations on how to improve the situation and
@@ -72,9 +70,7 @@ layer of defense will still protect the account, because it uses:
 
 It is always up to you and your users to decide how to deploy
 MFA in the most convenient way. Sometimes, however, it might take
-time and effort to puzzle out the settings, so our specialists [will
-gladly help
-you](https://o365hq.com/services/free-office-365-security-assessment-service)
+time and effort to puzzle out the settings, so our specialists [will gladly help you](o365hq.com/services/free-office-365-security-assessment-service)
 in case you need advice.
 
 ![](https://o365hq.com/images/192.png)
@@ -104,8 +100,7 @@ limit to perfection, and you can additionally:
     Office 365 Business Essentials and Business Premium plans) to make
     your organization an unassailable fortress for malware and spam
     attacks. See here if you want to learn more. It might be a little
-    tricky, so [don't hesitate to reach
-    out.](https://o365hq.com/services/free-office-365-security-assessment-service)
+    tricky, so [don't hesitate to reach out.](o365hq.com/services/free-office-365-security-assessment-service)
 
 ![](https://o365hq.com/images/194.png)
 
@@ -129,9 +124,6 @@ consequences. You can prevent it from happening by:
     types](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 ![](https://o365hq.com/images/195.png)
-
-To learn more about how to deal with ransomware, please [see
-here](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/)
 
 ### Disable mail auto-forwarding
 

@@ -21,8 +21,7 @@ Seattle-area companies to make the list were Amazon (\#30), Zillow
 (\#69), and Boeing (\#72).
 
 Forbes and Just Capital looked at 890 publicly traded US companies for
-the ranking. You can see the [full list
-here](https://www.forbes.com/just-companies/#1e98c64a2bf0)
+the ranking. 
 
 Social responsibility appeared to help, not hurt, the financial
 performance of most firms. Those that made the list reported 5 percent

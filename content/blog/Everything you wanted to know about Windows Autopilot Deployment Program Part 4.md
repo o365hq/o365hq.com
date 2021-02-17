@@ -11,11 +11,11 @@ If you would like to read the other parts in this article series,
 please go to:
 
 -   [Part
-    1](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
+    1](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
 -   [Part
-    2](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-2)
+    2](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-2)
 -   [Part
-    3](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-3)
+    3](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-3)
 
 Autopilot is a service from Microsoft that simplifies Windows deployment
 on new and existing devices. In the previous article, user-driven mode,

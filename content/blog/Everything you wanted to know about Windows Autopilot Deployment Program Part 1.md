@@ -11,11 +11,11 @@ If you would like to read the other parts in this article series,
 please go to:
 
 -   [Part
-    2](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-2)
+    2](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-2)
 -   [Part
-    3](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-3)
+    3](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-3)
 -   [Part
-    4](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-4)
+    4](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-4)
 
 ![](https://o365hq.com/images/257.png)
 

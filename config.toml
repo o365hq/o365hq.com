@@ -8,3 +8,13 @@ taxonomies = [
     {name = "products"},
     {name = "types"}
 ]
+
+[link_checker]
+
+skip_prefixes = [
+    "https://support.microsoft.com/",
+    "http://www.microsoftvolumelicensing.com/",
+    "https://portal.azure.com/",
+    "https://support.office.com/",
+    "https://cloudblogs.microsoft.com/",
+]

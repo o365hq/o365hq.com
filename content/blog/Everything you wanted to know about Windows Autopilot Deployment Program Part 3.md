@@ -11,18 +11,18 @@ If you would like to read the other parts in this article series
 please go to:
 
 -   [Part
-    1](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
+    1](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
 -   [Part
-    2](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-2)
+    2](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-2)
 -   [Part
-    4](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-4)
+    4](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-4)
 
 Autopilot is a name for a modern way of Windows deployment that you will
 surely enjoy. If you are new to this technology, please check out our
 articles on the
-[overview](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
+[overview](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-1)
 and
-[pre-requisites](https://o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-2)
+[pre-requisites](o365hq.com/blog/everything-you-wanted-to-know-about-windows-autopilot-deployment-program-part-2)
 for Autopilot. Windows deployment has many facets, and therefore there
 exist many scenarios where Autopilot can play its role. Grab some
 popcorn and make yourself comfortable, we're starting.

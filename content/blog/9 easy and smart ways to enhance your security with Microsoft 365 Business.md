@@ -7,7 +7,7 @@ date = 2019-01-10
 tags = ["cloud security", "microsoft 365"]
 +++
 
-A little spoiler -- Microsoft 365 (M365) is supercool in terms of
+A little spoiler - Microsoft 365 (M365) is supercool in terms of
 security because you get everything you need in one package and you can
 control all the great features from one portal. It enjoys all the best
 from Office 365 but also includes features available only as add-ons for
@@ -28,9 +28,7 @@ Hotmail or Outlook.com), and Google ID, to name just a few;\
     others, as encrypted emails are sent with a "Do Not Forward"
     setting.
 
-Encryption can easily make your corporate communication a lot safer. You
-can find more about message encryption
-[here.](https://docs.microsoft.com/en-us/office365/securitycompliance/ome)
+Encryption can easily make your corporate communication a lot safer. 
 
 ![](https://o365hq.com/images/198.png)
 
@@ -190,7 +188,7 @@ Windows Defender Exploit Guard has many useful attributes.
 ### Microsoft 365 Secure Score
 
 Office 365 Secure Score was already mentioned in [a previous
-article](https://o365hq.com/blog/top-8-solutions-to-secure-your-office-365-business)
+article](o365hq.com/blog/top-8-solutions-to-secure-your-office-365-business)
 , but with M365 it is also more advanced, as it analyses how well both
 Office 365 and Windows are secured and gives recommendations, suggesting
 specific controls you can apply to improve your security positioning.
