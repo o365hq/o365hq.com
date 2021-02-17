@@ -62,7 +62,7 @@ meaning the engineer who actually works on a physical server has no
 actual access to the application layer or actual environment and vice
 versa; those who work on application don't have access to the physical site
 (this is called separation of duties). Thus, your data is better
-protected when stored in cloud datacenters than locally
+protected when stored in cloud data centers than locally
 on-premises.
 
 As far as privacy is concerned, the fundamental principal Microsoft
@@ -154,7 +154,7 @@ comfortable than that. Customization, enhanced security, mobile calling,
 email integration and more makes Teams a unique asset to
 increase your company's efficiency
 
-### Myth 9 -- Office 365 is incompatible with third-party business-critical apps {#id9}
+### Myth 9 -- Office 365 is incompatible with third-party business-critical apps
 
 **Fact -- Microsoft is constantly working to make Office 365 compatible
 with the apps your employees need for effective work**

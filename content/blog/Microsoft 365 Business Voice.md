@@ -22,7 +22,7 @@ It is easy to use the Teams mobile app with voice from any device and
 while on the go. By simply tapping a contact, you are instantly connected
 with your customer. Back at your desk, you can use the Teams desktop
 app. A team can exist within an organization, a project, or even an
-interest group. In Teams, you and your coworkers cooperate through
+interest group. In Teams, you and your co-workers cooperate through
 channel and 1:1 conversations, set up meetings, and share files.
 Meetings can include multiple people from both inside and outside your
 organization.

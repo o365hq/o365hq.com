@@ -88,7 +88,7 @@ disabilities to focus less on layout and more on content.
 
 ![](https://o365hq.com/images/643.png)
 
-Anytime your team members send an email to you, a *MailTip* is triggered
+Anytime your team members send an email to you, a *Mail Tip* is triggered
 reminding senders to run the Accessibility checker before sending the
 message. The *Accessibility checker* will ensure that each image has
 text and appropriate reading order, making the presentation easy to

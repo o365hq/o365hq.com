@@ -1,6 +1,6 @@
 +++
 title = "Managing data risk in the post-GDPR (General Data Protection Regulation) world"
-description = "In the middle of May 2019, a compliance and security conference took place and, in case you missed it, we’ve prepared the recap of some sessions for you. One of the presentations was hosted by Silvia Kingsmill, a partner in a risk consulting practice at KPMG Canada, and a National Data Protection and Privacy Leader (yes, you’re not mistaken, the very same KPMG from the Big Four accounting firms). This session was devoted to an overview of the regulatory landscape. She spoke about data privacy, cybersecurity, data governance, digital transformation, and what’s more important, offered advice on how to reach compliance and improve the security posture of an organization. "
+description = "In the middle of May 2019, a compliance and security conference took place and, in case you missed it, we’ve prepared the recap of some sessions for you. One of the presentations was hosted by Silvia Kingsmill, a partner in a risk consulting practice at KPMG Canada, and a National Data Protection and Privacy Leader (yes, you’re not mistaken, the very same KPMG from the Big Four accounting firms). This session was devoted to an overview of the regulatory landscape. She spoke about data privacy, cyber security, data governance, digital transformation, and what’s more important, offered advice on how to reach compliance and improve the security posture of an organization. "
 date = 2019-06-06
 
 [taxonomies]
@@ -233,7 +233,7 @@ Service](https://o365hq.com/services/gdpr-data-discovery-service) .
 All the different components of the compliance journey can be used
 together as a good due diligence defense should a regulator come
 knocking on your door in the event of a privacy complaint or privacy 
-cyberbreach investigation. In fact, it can also be used to lessen the
+cyber breach investigation. In fact, it can also be used to lessen the
 severity of fine or a penalty.
 
 ### Conclusion

@@ -2,7 +2,7 @@
 title = "Already in the Cloud"
 +++
 
-### You've made a good move for your business future competetive advantage!
+### You've made a good move for your business future competitive advantage!
 
 But you can achieve more with our competencies, best practices, perks and benefits. 
 

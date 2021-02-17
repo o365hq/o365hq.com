@@ -11,7 +11,7 @@ tags = ["cloud security", "office 365"]
 corporate vice president of Microsoft AI and Research, who leads the New
 Experiences and Technologies, or NExT, group. Lee's group pursues what 
 Microsoft CEO Satya Nadella has called
-"relevant moonshots" with the potential to transform the core of
+"relevant moon shots" with the potential to transform the core of
 Microsoft's business and the computer technology industry. 
 Project Natick is an out-of-the-box idea to accommodate the exponential growth in
 demand for cloud computing infrastructure near population centers. As Peter Lee says, 

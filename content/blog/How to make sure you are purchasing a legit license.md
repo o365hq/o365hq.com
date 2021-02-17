@@ -10,7 +10,7 @@ tags = ["security", "vlsc", "volume licensing"]
 There exist some common techniques cybercriminals use to mislead users.
 One of them is to set up a fake website that falsely claims the
 legitimacy of the software licenses and subscriptions offered for sale.
-Experienced cybercriminals even go to great lengths to make websites
+Experienced cyber criminals even go to great lengths to make websites
 look authentic and to trick consumers into buying fraudulent
 subscriptions or counterfeit software.
 

@@ -95,7 +95,7 @@ outside the organization.
 Advanced Threat Protection (ATP) allows you to keep your users secure
 from malicious software hidden in files, including files stored in
 OneDrive or SharePoint. While Microsoft Exchange Online Protection (EOP)
-offers basic protection against most phish, ATP Anti -- phishing
+offers basic protection against most phishing, ATP Anti -- phishing
 policies provide advanced protection from other phishing attacks, like
 domain and user impersonations.
 

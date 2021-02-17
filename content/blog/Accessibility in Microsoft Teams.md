@@ -67,11 +67,11 @@ For diverse teams to collaborate inclusively, it's important that
 meetings and videos are accessible. With transcription, team members who
 may have a hearing disability, different levels of language proficiency,
 or for those connecting from a loud location can now work more
-inclusively with their coworkers.
+inclusively with their co-workers.
 
 For videos, you and your team can extend and customize their experience
 in Teams with *Stream* app integration. Videos can be embedded within a
-channel tab and can also be added to a personalized watchlist, making
+channel tab and can also be added to a personalized watch list, making
 content available in a centralized location.
 
 *Closed Captions* for videos and recorded meetings are automatically

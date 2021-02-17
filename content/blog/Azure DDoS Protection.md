@@ -7,7 +7,7 @@ date = 2018-04-23
 tags = ["azure", "cloud security"]
 +++
 
-A denial-of-service attack (DoS attack) is a cyberattack in which the
+A denial-of-service attack (DoS attack) is a cyber attack in which the
 perpetrator seeks to make a machine or network resource unavailable to
 its intended users by temporarily or indefinitely disrupting services of
 a host connected to the Internet. Denial of service is typically

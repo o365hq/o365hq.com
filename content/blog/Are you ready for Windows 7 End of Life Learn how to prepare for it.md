@@ -21,7 +21,7 @@ Microsoft stopped mainstream support for Windows 7 in January 2015, with
 extended support running till 14 January 2020. After that, Microsoft
 will no longer provide any assistance for PCs with Windows 7. You can
 still run Windows 7, but your computers will be open to various
-cyberattacks and security hazards when support stops. It is possible to
+cyber attacks and security hazards when support stops. It is possible to
 stay safe on Windows 7 and acquire Extended Security Updates
 (ESU). It\`s a good solution to keep your hardware safe and
 invulnerable for some time.

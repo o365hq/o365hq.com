@@ -30,7 +30,7 @@ Here are several recommendations for your organization:
 **[Covid-19 response track for
 Nonprofits](https://techsoup.course.tc/catalog/track/coronavirus-mitigation-track)**
 
-This free training course will help you make the transitioning to remote
+This free training course will help you make the transition to remote
 work as smooth as possible.
 
 **[Microsoft Teams training track for

@@ -79,7 +79,7 @@ offline.
 *SharePoint experience in Teams (Snapshot from the SharePoint Virtual
 Conference)*
 
-Among great improvements on the backend is when you're editing every
+Among great improvements on the back-end is when you're editing every
 other file in OneDrive and SharePoint, only the changes you've made are
 automatically synced instead of uploading the whole file. This saves on
 performance, network time, and certainly battery life.

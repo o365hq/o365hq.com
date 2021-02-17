@@ -25,7 +25,7 @@ it matters **with always-on security**.
 
 -   Microsoft 365 is an integrated solution powered by Office 365 and Windows 10,
     designed for small and mid-size businesses.
--   Connect with your remote coworkers and work on a document in
+-   Connect with your remote co-workers and work on a document in
     real time using Word, Outlook, OneDrive, or Skype for Business.
 -   See how inking in Windows 10 enables you to take notes with OneNote.
 -   Easily set up policies to protect company data across devices with
