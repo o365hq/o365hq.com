@@ -1,5 +1,7 @@
 {
   "lang": "en",
+  "ignoreUppercase": "true",
+  "ignoreUrls": "true",
   "dictionary": [
     "o365hq",
     "phishing",
@@ -126,7 +128,6 @@
     "cyberattack",
     "cybercriminals",
     "closeout",
-    "repurpose",
-    
+    "repurpose"
   ]
 }
