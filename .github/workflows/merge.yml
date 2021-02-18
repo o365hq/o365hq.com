@@ -8,12 +8,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: zola check
       - uses: actions/checkout@v2
       - run: |
           wget https://github.com/getzola/zola/releases/download/v0.13.0/zola-v0.13.0-x86_64-unknown-linux-gnu.tar.gz
           tar -xvf zola-v0.13.0-x86_64-unknown-linux-gnu.tar.gz
           chmod +x zola
           ./zola check
-      - uses: heytitle/github-action-yaspeller@v0.0.7
-        with:
-          ext: ".md"
+      - name: spellchecker
+      - run: |
+          npm install yaspeller -g
+          yaspeller -e ".md" . --ignore-uppercase --ignore-urls
