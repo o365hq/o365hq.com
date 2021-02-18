@@ -15,8 +15,5 @@ jobs:
           tar -xvf zola-v0.13.0-x86_64-unknown-linux-gnu.tar.gz
           chmod +x zola
           ./zola check
-      - name: spellchecker
-      - uses: actions/checkout@v2
-      - run: |
           npm install yaspeller -g
           yaspeller -e ".md" . --ignore-uppercase --ignore-urls
