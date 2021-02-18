@@ -44,7 +44,7 @@ add multiple calendars to get a consolidated view.
 ### Work better together
 
 Work better together with Microsoft Teams and collaborate as a group
-with coworkers, customers, and suppliers. Microsoft Teams is ideal for
+with co-workers, customers, and suppliers. Microsoft Teams is ideal for
 working in a group. Typically, group members have trouble keeping track
 of all the various threads. It gets hard to track this over email. Also,
 the documents are scattered.
@@ -60,7 +60,7 @@ conversations and get up to speed quickly.
 
 Teams enables a free flow of conversation where the design team can
 collaborate and trade ideas in a single persistent chat. Teams is also
-perfect for lighthearted banter, with its support for GIFs and
+perfect for light-hearted banter, with its support for GIFs and
 stickers.
 
 Another great Teams feature is that all team members can access their

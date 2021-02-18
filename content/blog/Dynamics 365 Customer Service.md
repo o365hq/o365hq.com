@@ -50,7 +50,7 @@ click to pick up the chat.
 
 ![](https://o365hq.com/images/555.png)
 
-In thte Navigation history there are details related to the customer location
+In the Navigation history there are details related to the customer location
 and chat information. With additional configuration, Live Assist can
 provide details about the customer, including login name and customer
 details.

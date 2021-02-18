@@ -61,4 +61,4 @@ Microsoft Exchange Online is monitored.
 
 Microsoft Cloud App Security helps you control how your data is
 consumed. It provides advanced analytics to discover and prevent
-cyberthreats across all your Microsoft and third-party cloud services.
+cyber threats across all your Microsoft and third-party cloud services.

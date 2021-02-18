@@ -87,7 +87,7 @@ plans:
 -   Each user benefiting from Office 365 Message Encryption needs to be
     licensed to be covered by the feature
 -   For the full list, see the [Exchange Online service
-    descriptions](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
+    descriptions](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
     for Office 365 Message Encryption
 
 ### Plan

@@ -15,7 +15,7 @@ tags = ["office 365"]
 3.  Look for the domain name marked **(Default)** in the **Domain
     name** column. This is your *default domain name for your Office 365
     tenant*. It may or may not be the same as your [Office 365 tenant
-    name](https://o365hq.com/faq/how-to-find-your-office-365-tenant-name).
+    name](o365hq.com/faq/how-to-find-your-office-365-tenant-name).
 
 Check the screenshot below.
 

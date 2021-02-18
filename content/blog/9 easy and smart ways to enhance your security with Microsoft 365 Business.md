@@ -1,13 +1,13 @@
 +++
 title = "9 Easy and Smart Ways to Enhance your Security with Microsoft 365 Business"
-description = "In the previous article, we  discussed the best practices that will enhance the cybersecurity of your Office 365 Business. This time, let’s discover what Microsoft 365 has to offer in terms of security. Let’s clarify a few things before we move on, as Office 365 and Microsoft 365 are often mixed up. Microsoft 365 is a bundle solution that comprises Office 365 Business Premium, Windows 10 Pro, and Enterprise Mobility + Security. Keep this in mind if you’d like to make sure your employees can collaborate effectively, stay mobile, and feel secure from cyberthreats 24/7."
+description = "In the previous article, we  discussed the best practices that will enhance the cybersecurity of your Office 365 Business. This time, let’s discover what Microsoft 365 has to offer in terms of security. Let’s clarify a few things before we move on, as Office 365 and Microsoft 365 are often mixed up. Microsoft 365 is a bundle solution that comprises Office 365 Business Premium, Windows 10 Pro, and Enterprise Mobility + Security. Keep this in mind if you’d like to make sure your employees can collaborate effectively, stay mobile, and feel secure from cyber threats 24/7."
 date = 2019-01-10
 
 [taxonomies]
 tags = ["cloud security", "microsoft 365"]
 +++
 
-A little spoiler -- Microsoft 365 (M365) is supercool in terms of
+A little spoiler - Microsoft 365 (M365) is supercool in terms of
 security because you get everything you need in one package and you can
 control all the great features from one portal. It enjoys all the best
 from Office 365 but also includes features available only as add-ons for
@@ -28,9 +28,7 @@ Hotmail or Outlook.com), and Google ID, to name just a few;\
     others, as encrypted emails are sent with a "Do Not Forward"
     setting.
 
-Encryption can easily make your corporate communication a lot safer. You
-can find more about message encryption
-[here.](https://docs.microsoft.com/en-us/office365/securitycompliance/ome)
+Encryption can easily make your corporate communication a lot safer. 
 
 ![](https://o365hq.com/images/198.png)
 
@@ -154,9 +152,7 @@ locations, like SharePoint or OneDrive, etc., and prevent your users from
 inadvertently sharing it. They are offered policy tips that help them to
 comply with your DLP policies and still won't interfere with
 their work. Here is where you can find the [overview of DLP
-policies](https://docs.microsoft.com/en-us/office365/securitycompliance/data-loss-prevention-policies)
-and [get started with  DLP policy
-recommendations.](https://docs.microsoft.com/en-us/office365/securitycompliance/get-started-with-dlp-policy-recommendations)
+policies](https://docs.microsoft.com/en-us/office365/securitycompliance/data-loss-prevention-policies).
 
 ![](https://o365hq.com/images/205.png)
 
@@ -190,7 +186,7 @@ Windows Defender Exploit Guard has many useful attributes.
 ### Microsoft 365 Secure Score
 
 Office 365 Secure Score was already mentioned in [a previous
-article](https://o365hq.com/blog/top-8-solutions-to-secure-your-office-365-business)
+article](o365hq.com/blog/top-8-solutions-to-secure-your-office-365-business)
 , but with M365 it is also more advanced, as it analyses how well both
 Office 365 and Windows are secured and gives recommendations, suggesting
 specific controls you can apply to improve your security positioning.

@@ -22,7 +22,7 @@ within Outlook and save the business and contact information. Customer
 Manager makes it simple to share contact info with all the staff, so
 that everyone is on the same page and customers get a consistent
 experience regardless of who calls. If you want to share a new contact
-info with your coworkers and staff, just toggle the Boolean from "no" to
+info with your co-workers and staff, just toggle the Boolean from "no" to
 "yes."
 
 Once the business contact has been added by clicking Save, you can also

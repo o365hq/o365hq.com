@@ -70,4 +70,4 @@ exfiltrate data.
 Azure Security Center is a built-in tool that provides you with threat
 protection for workloads running in Azure, on-premises, and in other
 clouds. It helps you raise cloud security posture and protects against
-cyberattacks using Microsoft\`s vast threat intelligence.
+cyber attacks using Microsoft\`s vast threat intelligence.

@@ -64,7 +64,7 @@ It's Microsoft's white-glove approach to PSTN availability in
 your tenant. In other words, PSTN connectivity is provided
 directly by Microsoft, so you have a single contract for all the
 features, including PSTN calling, and a single party to deal
-with. Microsoft partners on the backend take care of the PSTN
+with. Microsoft partners on the back-end take care of the PSTN
 trunks, but you never see that partner. The exceptions are Australia and
 Japan, where third parties provide calling plans. But they are very
 tightly integrated with Microsoft.

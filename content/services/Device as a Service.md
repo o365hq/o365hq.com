@@ -28,7 +28,7 @@ for all of our integration services.
 
 You might add another migration or implementation services; also, we
 highly recommend checking out our [Deployment of devices with Windows AutoPilot
-service](https://o365hq.com/services/deployment-of-devices-with-windows-autopilot)
+service](o365hq.com/services/deployment-of-devices-with-windows-autopilot)
 
 ### Support Services -- Service Desk
 

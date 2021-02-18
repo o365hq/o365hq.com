@@ -8,7 +8,7 @@ tags = ["intelligent workplace", "sharepoint online"]
 +++
 
 The first part of the post is
-[here](https://o365hq.com/blog/how-to-build-an-intelligent-workplace-with-sharepoint-part-1)
+[here](o365hq.com/blog/how-to-build-an-intelligent-workplace-with-sharepoint-part-1)
 
 ### Employee engagement and communications
 

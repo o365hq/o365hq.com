@@ -1,6 +1,6 @@
 +++
 title = "Microsoft tests underwater datacenter"
-description = "Under the sea, Microsoft tests a datacenter that’s quick to deploy, could provide internet connectivity for years."
+description = "Under the sea, Microsoft tests a data center that’s quick to deploy, could provide internet connectivity for years."
 date = 2018-06-07
 
 [taxonomies]

@@ -42,9 +42,9 @@ Choose one of the following procedures.
 ### For more information about Office 365 tenants, check these articles:
 
 -   [Office 365 tenant -- what is
-    it?](https://o365hq.com/faq/what-is-office-365-or-azure-ad-tenant)
+    it?](o365hq.com/faq/what-is-office-365-or-azure-ad-tenant)
 -   [How to find your Office 365 tenant
-    ID](https://o365hq.com/faq/how-to-find-your-office-365-tenant-id)
+    ID](o365hq.com/faq/how-to-find-your-office-365-tenant-id)
 
 ### Let us help you with your Office 365 migration project
 

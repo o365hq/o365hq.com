@@ -16,7 +16,7 @@ tags = ["office 365"]
 2.  [Office 365 admin
     overview](https://support.office.com/en-us/article/office-365-admin-overview-c7228a3e-061f-4575-b1ef-adf1d1669870?ui=en-US&rs=en-US&ad=US)
 3.  [Email collaboration in Office
-    365](https://o365hq.com/blog/email-collaboration-in-office-365)
+    365](o365hq.com/blog/email-collaboration-in-office-365)
 
 ### Simple administrative tasks
 
@@ -34,8 +34,8 @@ tags = ["office 365"]
 2.  [Adding and verifying your own domain to Office
     365](https://support.office.com/en-us/article/add-a-domain-to-office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611?redirectSourcePath=%252fen-us%252farticle%252fguide-you-stepbystep-to-add-your-domain-1cd4839b-d051-46b8-ab9b-bc7752024e78&ui=en-US&rs=en-US&ad=US)
 3.  [What is Office 365 or Azure AD
-    tenant?](https://o365hq.com/faq/what-is-office-365-or-azure-ad-tenant)
+    tenant?](o365hq.com/faq/what-is-office-365-or-azure-ad-tenant)
 4.  [How to find your Office 365 tenant
-    ID?](https://o365hq.com/faq/how-to-find-your-office-365-tenant-id)
+    ID?](o365hq.com/faq/how-to-find-your-office-365-tenant-id)
 5.  [How to find your Office 365 tenant
-    name?](https://o365hq.com/faq/how-to-find-your-office-365-tenant-name)
+    name?](o365hq.com/faq/how-to-find-your-office-365-tenant-name)

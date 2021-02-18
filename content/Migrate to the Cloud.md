@@ -32,6 +32,6 @@ We were and we are in the forefront of cloud and digital transformation; IT Part
 
 Microsoft Gold Partner since 2006. Deep partner relationships with Microsoft: our engineers certified by Microsoft, we have best practices and all knowledge base from the biggest vendor. 
 
-Flexibility and ease of decision making. We aren’t a big corp, we move fast.
+Flexibility and ease of decision making. We aren’t a big Corp, we move fast.
 
 ![Image](/migrate2.png)

@@ -67,7 +67,7 @@ form the incident. When exploring alerts manually, SecOps teams must
 spot and correlate entities at risk from threats. This takes too much
 time and implies multiple tools and systems. With AIR, you can
 spend less time hunting for alerts and more time focusing on
-preventative measures, like education and fine-tuned email security
+preventive measures, like education and fine-tuned email security
 policies that best fit your needs.
 
 ![](https://o365hq.com/images/680.png)
@@ -88,16 +88,16 @@ for spoofing. Being able to provide targeted anti-phishing policies to
 further protect those groups is invaluable.
 
 Microsoft security research is seeing a significant spike in
-cryptocurrency mining -- or cryptojacking -- where bad actors gain
+crypto currency mining -- or crypto jacking -- where bad actors gain
 access to corporate resources to support mining operations. The problem
-with cryptojacking is that, unlike other threats like phishing, it
+with crypto jacking is that, unlike other threats like phishing, it
 doesn't rely on the victim to install a program that secretly mines
-cryptocurrency. In-browser cryptojacking, for example, skips that step
+crypto currency. In-browser crypto jacking, for example, skips that step
 altogether, using JavaScript on a compromised web page to get the
-browser to mine for cryptocurrencies. Hackers have used cryptocurrency
+browser to mine for crypto currencies. Hackers have used crypto currency
 mining as a decoy to launch more dangerous cyberattacks, and damage can
-also be done to the machine/device that's been "cryptojacked." And of
-course, cryptojacking takes resources away from systems critical to the
+also be done to the machine/device that's been "crypto jacked." And of
+course, crypto jacking takes resources away from systems critical to the
 business. To further protect the company, you can use security
 capabilities built into Windows 10 Enterprise and Defender to prevent
 employees from installing malicious and unauthorized apps. Microsoft
@@ -116,7 +116,7 @@ According to Verizon's 2019 Data Breach Investigation Report, 34% of
 breaches involved internal actors. To make matters worse, key tactics of
 these breaches included errors and misuse of authorized users. It's
 heartbreaking to think that your own employees represent a sizable
-cybersecurity threat to the company -- but it's the reality we face.
+cyber security threat to the company -- but it's the reality we face.
 You should be prepared to detect and proactively respond to these
 internal threats. To keep your organization's expanding universe of
 cloud-based apps and data safe, you need a tool that focuses on cloud

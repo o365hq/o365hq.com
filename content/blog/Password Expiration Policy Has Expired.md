@@ -59,7 +59,7 @@ following points:
 
 How many days is it acceptable for an attacker to use a password?
 Windows default time is 42 days, but don't you think this is
-impermissibly long?
+impermissible long?
 
 And even more frequent password change will turn the work of employees
 into agony.
@@ -72,7 +72,7 @@ restrictions configured, regular monitoring of activity, and timely
 response to suspicious activity.
 
 It also can serve as a guide for auditors. If such an organization
-has implemented banned password lists, multifactor authentication,
+has implemented banned password lists, multi factor authentication,
 brute-force password attack and abnormal login attempt detection, does a
 password need to be periodically expired? And if they have not
 implemented modern protection solutions, will password expiration help

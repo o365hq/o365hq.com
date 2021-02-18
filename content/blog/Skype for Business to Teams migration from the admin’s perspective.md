@@ -132,7 +132,7 @@ Here's a quick table summarizing the above-mentioned tracks.
 So, technically, moving to Tеams won't require much attention from admin,
 but you need to prepare your users for it to make it go smoothly. 
 We already discussed this topic in a previous post, so for more detail, [see
-here](https://o365hq.com/blog/what-are-the-options-to-upgrade-from-skype-for-business-online-to-teams)
+here](o365hq.com/blog/what-are-the-options-to-upgrade-from-skype-for-business-online-to-teams)
 . If you've made the move but your users turned out not to be perfectly
 ready, you can roll them back to SfB in about five minutes, changing the
 org-wide settings.

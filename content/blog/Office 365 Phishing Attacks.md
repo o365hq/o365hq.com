@@ -109,6 +109,6 @@ mitigate its impact.
 
 IT Partner provides a wide range of tools to improve security in Office
 365 and help with implementation of anti-phishing options. With IT
-Partner's comprehensive services, IT tTeams can easily train staff
+Partner's comprehensive services, IT Teams can easily train staff
 members on cybersecurity and neutralize Office 365 phishing scams and
 other threats.

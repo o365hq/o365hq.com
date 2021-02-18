@@ -57,7 +57,7 @@ in the series.
 ![](https://o365hq.com/images/607.png)
 
 Whether your business needs require simple serial flows, as in our
-example, or multistep parallel scenarios across your entire
+example, or multi-step parallel scenarios across your entire
 organization, Microsoft Flow's intuitive interface makes designing,
 testing, and deploying it quick and easy.
 
